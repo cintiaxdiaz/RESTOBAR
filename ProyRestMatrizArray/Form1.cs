@@ -21,6 +21,7 @@ namespace ProyRestMatrizArray
         {
             Form formulario = new Form2();
             formulario.Show();
+            int a = 3;
         }
 
        
