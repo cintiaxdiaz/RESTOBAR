@@ -17,6 +17,9 @@ namespace ProyRestMatrizArray
             InitializeComponent();
         }
 
-       
+        private void btnMesa1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hoal");
+        }
     }
 }
