@@ -38,7 +38,7 @@
             // 
             this.textBoxUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsuario.Location = new System.Drawing.Point(478, 281);
+            this.textBoxUsuario.Location = new System.Drawing.Point(275, 108);
             this.textBoxUsuario.Multiline = true;
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(174, 39);
@@ -49,7 +49,7 @@
             // textBoxPassUsuario
             // 
             this.textBoxPassUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassUsuario.Location = new System.Drawing.Point(479, 335);
+            this.textBoxPassUsuario.Location = new System.Drawing.Point(276, 165);
             this.textBoxPassUsuario.Multiline = true;
             this.textBoxPassUsuario.Name = "textBoxPassUsuario";
             this.textBoxPassUsuario.Size = new System.Drawing.Size(173, 39);
@@ -60,7 +60,7 @@
             // buttonIngresar
             // 
             this.buttonIngresar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIngresar.Location = new System.Drawing.Point(479, 389);
+            this.buttonIngresar.Location = new System.Drawing.Point(275, 266);
             this.buttonIngresar.Name = "buttonIngresar";
             this.buttonIngresar.Size = new System.Drawing.Size(174, 39);
             this.buttonIngresar.TabIndex = 2;

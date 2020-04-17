@@ -19,9 +19,8 @@ namespace ProyRestMatrizArray
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-            
-
-            string rut = textBoxUsuario.Text;
+           
+            string rut = textBoxPassUsuario.Text;
             //rut = rut.Replace(".", string.Empty); ( se lo quitamos??)
 
             if (rut.Length == 9) {
@@ -85,7 +84,7 @@ namespace ProyRestMatrizArray
 
             } else {
 
-                //textBox2.Text = "RUT invalido"; aqui iria el mensaje
+                MessageBox.Show("Usuario o contraseña incorrecta"); 
             }
         }
 
