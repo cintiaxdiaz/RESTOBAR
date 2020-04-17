@@ -86,6 +86,8 @@ namespace ProyRestMatrizArray
             } else {
 
                 //textBox2.Text = "RUT invalido"; aqui iria el mensaje
+                
+            
             }
         }
 
