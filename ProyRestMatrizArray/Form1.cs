@@ -80,7 +80,9 @@ namespace ProyRestMatrizArray
             if (digito == digitoVer) {
 
                 Form formulario = new Form2();
-                formulario.Show(); 
+                formulario.Show();
+
+                MessageBox.Show("BIENVENIDO");
 
             } else {
                 
