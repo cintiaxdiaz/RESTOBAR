@@ -21,7 +21,6 @@ namespace ProyRestMatrizArray
         {
            
             string rut = textBoxPassUsuario.Text;
-            //rut = rut.Replace(".", string.Empty); ( se lo quitamos??)
 
             if (rut.Length == 9) {
                 rut = "0" + rut;
@@ -82,13 +81,27 @@ namespace ProyRestMatrizArray
                 Form formulario = new Form2();
                 formulario.Show();
 
-                MessageBox.Show("BIENVENIDO");
+                MessageBox.Show("BIENVENIDO, QUE TENGAS UN EXCELENTE DÍA!");
 
             } else {
                 
                 MessageBox.Show("Usuario o contraseña incorrecta"); 
             }
         }
-        
+
+        private void Timer1_Tick(object sender, EventArgs e) {
+
+        }
+
+        private void Horayfecha_Tick(object sender, EventArgs e) {
+
+            hora.Text = DateTime.Now.ToString("HH:mm:ss");
+            fecha.Text = DateTime.Now.ToLongDateString();
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e) {
+
+        }
     }
 }

@@ -21,5 +21,11 @@ namespace ProyRestMatrizArray
         {
             MessageBox.Show("hoal");
         }
+
+        private void Horayfecha_Tick(object sender, EventArgs e) {
+
+            hora.Text = DateTime.Now.ToString("HH:mm:ss");
+            fecha.Text = DateTime.Now.ToLongDateString();
+        }
     }
 }
