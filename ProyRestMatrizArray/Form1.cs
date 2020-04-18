@@ -80,6 +80,7 @@ namespace ProyRestMatrizArray
 
                 Form formulario = new Form2();
                 formulario.Show();
+                Visible = false;
 
                 MessageBox.Show("BIENVENIDO, QUE TENGAS UN EXCELENTE DÍA!");
 

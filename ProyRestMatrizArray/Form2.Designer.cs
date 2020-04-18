@@ -78,6 +78,7 @@
             this.btnMesa2.TabIndex = 1;
             this.btnMesa2.Text = "M 2";
             this.btnMesa2.UseVisualStyleBackColor = true;
+            this.btnMesa2.Click += new System.EventHandler(this.BtnMesa2_Click);
             // 
             // btnMesa3
             // 
@@ -284,6 +285,7 @@
             this.button1.TabIndex = 18;
             this.button1.Text = "Cerrar sesión";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
