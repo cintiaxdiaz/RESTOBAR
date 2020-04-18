@@ -144,7 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1262, 660);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.hora);
@@ -152,6 +152,7 @@
             this.Controls.Add(this.textBoxPassUsuario);
             this.Controls.Add(this.textBoxUsuario);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

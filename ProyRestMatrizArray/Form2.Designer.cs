@@ -90,6 +90,7 @@
             this.btnMesa3.TabIndex = 2;
             this.btnMesa3.Text = "M 3";
             this.btnMesa3.UseVisualStyleBackColor = true;
+            this.btnMesa3.Click += new System.EventHandler(this.btnMesa3_Click);
             // 
             // btnMesa4
             // 
@@ -101,6 +102,7 @@
             this.btnMesa4.TabIndex = 3;
             this.btnMesa4.Text = "M 4";
             this.btnMesa4.UseVisualStyleBackColor = true;
+            this.btnMesa4.Click += new System.EventHandler(this.btnMesa4_Click);
             // 
             // btnMesa5
             // 
@@ -112,6 +114,7 @@
             this.btnMesa5.TabIndex = 4;
             this.btnMesa5.Text = "M 5";
             this.btnMesa5.UseVisualStyleBackColor = true;
+            this.btnMesa5.Click += new System.EventHandler(this.btnMesa5_Click);
             // 
             // btnMesa6
             // 
@@ -123,6 +126,7 @@
             this.btnMesa6.TabIndex = 5;
             this.btnMesa6.Text = "M 6";
             this.btnMesa6.UseVisualStyleBackColor = true;
+            this.btnMesa6.Click += new System.EventHandler(this.btnMesa6_Click);
             // 
             // btnMesa7
             // 
@@ -134,6 +138,7 @@
             this.btnMesa7.TabIndex = 6;
             this.btnMesa7.Text = "M 7";
             this.btnMesa7.UseVisualStyleBackColor = true;
+            this.btnMesa7.Click += new System.EventHandler(this.btnMesa7_Click);
             // 
             // btnMesa8
             // 
@@ -145,6 +150,7 @@
             this.btnMesa8.TabIndex = 7;
             this.btnMesa8.Text = "M 8";
             this.btnMesa8.UseVisualStyleBackColor = true;
+            this.btnMesa8.Click += new System.EventHandler(this.btnMesa8_Click);
             // 
             // btnMesa9
             // 
@@ -156,6 +162,7 @@
             this.btnMesa9.TabIndex = 8;
             this.btnMesa9.Text = "M 9";
             this.btnMesa9.UseVisualStyleBackColor = true;
+            this.btnMesa9.Click += new System.EventHandler(this.btnMesa9_Click);
             // 
             // btnMesa10
             // 
@@ -167,6 +174,7 @@
             this.btnMesa10.TabIndex = 9;
             this.btnMesa10.Text = "M 10";
             this.btnMesa10.UseVisualStyleBackColor = true;
+            this.btnMesa10.Click += new System.EventHandler(this.btnMesa10_Click);
             // 
             // btnMesa11
             // 
@@ -178,6 +186,7 @@
             this.btnMesa11.TabIndex = 10;
             this.btnMesa11.Text = "M 11";
             this.btnMesa11.UseVisualStyleBackColor = true;
+            this.btnMesa11.Click += new System.EventHandler(this.btnMesa11_Click);
             // 
             // btnMesa12
             // 
@@ -189,6 +198,7 @@
             this.btnMesa12.TabIndex = 11;
             this.btnMesa12.Text = "M 12";
             this.btnMesa12.UseVisualStyleBackColor = true;
+            this.btnMesa12.Click += new System.EventHandler(this.btnMesa12_Click);
             // 
             // btnMesa13
             // 
@@ -200,6 +210,7 @@
             this.btnMesa13.TabIndex = 12;
             this.btnMesa13.Text = "M 13";
             this.btnMesa13.UseVisualStyleBackColor = true;
+            this.btnMesa13.Click += new System.EventHandler(this.btnMesa13_Click);
             // 
             // btnMesa14
             // 
@@ -211,17 +222,19 @@
             this.btnMesa14.TabIndex = 13;
             this.btnMesa14.Text = "M 14";
             this.btnMesa14.UseVisualStyleBackColor = true;
+            this.btnMesa14.Click += new System.EventHandler(this.btnMesa14_Click);
             // 
             // btnMesa15
             // 
             this.btnMesa15.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa15.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa15.Image")));
-            this.btnMesa15.Location = new System.Drawing.Point(530, 288);
+            this.btnMesa15.Location = new System.Drawing.Point(530, 299);
             this.btnMesa15.Name = "btnMesa15";
             this.btnMesa15.Size = new System.Drawing.Size(79, 80);
             this.btnMesa15.TabIndex = 14;
             this.btnMesa15.Text = "M 15";
             this.btnMesa15.UseVisualStyleBackColor = true;
+            this.btnMesa15.Click += new System.EventHandler(this.btnMesa15_Click);
             // 
             // groupBox1
             // 
@@ -327,7 +340,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1247, 630);
+            this.ClientSize = new System.Drawing.Size(1262, 660);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -336,6 +349,7 @@
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mesas";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

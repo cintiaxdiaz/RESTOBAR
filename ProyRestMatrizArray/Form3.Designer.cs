@@ -535,6 +535,7 @@
             this.Controls.Add(this.Orden);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);

@@ -71,6 +71,123 @@ namespace ProyRestMatrizArray
             }
 
         }
+
+        private void btnMesa3_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa4_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa5_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa6_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa7_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa8_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa9_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa10_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa11_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa12_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa13_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa14_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
+
+        private void btnMesa15_Click(object sender, EventArgs e)
+        {
+            Mesa mesita = mesas[0];
+            Form formulario = new Form3(mesita);
+
+            //  mesas[0].ocupada
+            formulario.Show();
+        }
     }
 }
 
