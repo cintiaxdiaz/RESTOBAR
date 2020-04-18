@@ -20,9 +20,28 @@ namespace ProyRestMatrizArray
         }
 
         private void btnMesa1_Click(object sender, EventArgs e) {
-            Mesa mesita = mesas[];
+            Mesa mesita = mesas[0];
             Form formulario = new Form3(mesita);
         }
+        //mesas [2,4]
+        //mesas [0,0] = btnMesa1;
+        //mesas [0,1] = btnMesa2;
+        //mesas [0,2] = btnMesa3;
+        //mesas [0,3] = btnMesa4;
+        //mesas [0,4] = btnMesa5;
+        //mesas [1,0] = btnMesa6;
+        //mesas [1,1] = btnMesa7;
+        //mesas [1,2] = btnMesa8;
+        //mesas [1,3] = btnMesa9;
+        //mesas [1,4] = btnMesa10;
+        //mesas [2,0] = btnMesa11;
+        //mesas [2,1] = btnMesa12;
+        //mesas [2,2] = btnMesa13;
+        //mesas [2,3] = btnMesa14;
+        //mesas [2,4] = btnMesa15;
+        
+
+
 
         private void Horayfecha_Tick(object sender, EventArgs e) {
 

@@ -26,6 +26,11 @@ namespace ProyRestMatrizArray
                 rut = "0" + rut;
             }
 
+            if (rut.Length == 8)
+            {
+                rut = "00" + rut;
+            }
+
             if (rut[8] != '-') {
 
                // textBox2.Text = "Incorrecto, falta guión";
