@@ -129,11 +129,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 139);
+            this.groupBox1.Location = new System.Drawing.Point(12, 158);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(440, 170);
+            this.groupBox1.Size = new System.Drawing.Size(427, 138);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 

@@ -15,5 +15,25 @@ namespace ProyRestMatrizArray
         public Form3() {
             InitializeComponent();
         }
+
+        private void Label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Orden_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+
+        private void Label8_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Label9_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Button8_Click(object sender, EventArgs e) {
+
+        }
     }
 }
