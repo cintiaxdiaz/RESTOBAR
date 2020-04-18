@@ -20,7 +20,8 @@ namespace ProyRestMatrizArray
         }
 
         private void btnMesa1_Click(object sender, EventArgs e) {
-            MessageBox.Show("hoal");
+            Mesa mesita = mesas[];
+            Form formulario = new Form3(mesita);
         }
 
         private void Horayfecha_Tick(object sender, EventArgs e) {
@@ -33,7 +34,7 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[0];
             Form formulario = new Form3(mesita);
 
-            mesas[0].ocupada
+          //  mesas[0].ocupada
             formulario.Show();
         }
 
