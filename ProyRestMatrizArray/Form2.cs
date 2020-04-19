@@ -13,12 +13,20 @@ namespace ProyRestMatrizArray
     public partial class Form2 : Form
     {
         Mesa[,] mesas;
+       Label [,] labels;
 
         public Form2() {
+            //matriz de label
             
-            // Matriz de mesas
+                labels = new Label[3, 5] {
+                { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
+                { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
+                { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
+            };
 
-            mesas = new Mesa[3, 5] {
+                // Matriz de mesas
+
+                mesas = new Mesa[3, 5] {
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa()}, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }
@@ -178,6 +186,29 @@ namespace ProyRestMatrizArray
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e) {
+
+        }
+
+        private void btnRevDisponible_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                
+                for (int j = 0; j < 5; j++)
+                    
+                {
+                    if (mesas[i, j].ocupada)
+                    {
+                        labels[i, j].
+                    }
+                    else {labels[i,j].
+
+                    }
+                }
+
+
+            } 
+            
 
         }
     }

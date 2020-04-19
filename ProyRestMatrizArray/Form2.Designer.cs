@@ -68,6 +68,7 @@
             this.labelmesa13 = new System.Windows.Forms.Label();
             this.labelmesa14 = new System.Windows.Forms.Label();
             this.labelmesa15 = new System.Windows.Forms.Label();
+            this.btnRevDisponible = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -515,6 +516,16 @@
             this.labelmesa15.TabIndex = 29;
             this.labelmesa15.Text = "labelMesa15";
             // 
+            // btnRevDisponible
+            // 
+            this.btnRevDisponible.Location = new System.Drawing.Point(831, 543);
+            this.btnRevDisponible.Name = "btnRevDisponible";
+            this.btnRevDisponible.Size = new System.Drawing.Size(116, 50);
+            this.btnRevDisponible.TabIndex = 23;
+            this.btnRevDisponible.Text = "Revisar Disponibilidad";
+            this.btnRevDisponible.UseVisualStyleBackColor = true;
+            this.btnRevDisponible.Click += new System.EventHandler(this.btnRevDisponible_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -522,6 +533,7 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
+            this.Controls.Add(this.btnRevDisponible);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
@@ -579,5 +591,6 @@
         private System.Windows.Forms.Label labelmesa3;
         private System.Windows.Forms.Label labelmesa2;
         private System.Windows.Forms.Label labelmesa1;
+        private System.Windows.Forms.Button btnRevDisponible;
     }
 }
