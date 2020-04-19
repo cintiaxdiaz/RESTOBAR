@@ -120,7 +120,7 @@
             // 
             this.btnMesa5.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa5.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa5.Image")));
-            this.btnMesa5.Location = new System.Drawing.Point(759, 54);
+            this.btnMesa5.Location = new System.Drawing.Point(530, 54);
             this.btnMesa5.Name = "btnMesa5";
             this.btnMesa5.Size = new System.Drawing.Size(79, 80);
             this.btnMesa5.TabIndex = 4;
@@ -250,6 +250,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
             this.groupBox1.Controls.Add(this.labelmesa15);
             this.groupBox1.Controls.Add(this.labelmesa14);
             this.groupBox1.Controls.Add(this.labelmesa13);
@@ -393,7 +394,7 @@
             // 
             this.labelmesa5.AutoSize = true;
             this.labelmesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa5.Location = new System.Drawing.Point(756, 156);
+            this.labelmesa5.Location = new System.Drawing.Point(527, 136);
             this.labelmesa5.Name = "labelmesa5";
             this.labelmesa5.Size = new System.Drawing.Size(89, 16);
             this.labelmesa5.TabIndex = 19;
@@ -446,11 +447,11 @@
             // 
             this.fecha.AutoSize = true;
             this.fecha.BackColor = System.Drawing.Color.Transparent;
-            this.fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.fecha.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.ForeColor = System.Drawing.Color.White;
             this.fecha.Location = new System.Drawing.Point(41, 9);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(59, 20);
+            this.fecha.Size = new System.Drawing.Size(69, 29);
             this.fecha.TabIndex = 16;
             this.fecha.Text = "Fecha";
             // 
@@ -458,10 +459,11 @@
             // 
             this.hora.AutoSize = true;
             this.hora.BackColor = System.Drawing.Color.Transparent;
-            this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.Color.White;
             this.hora.Location = new System.Drawing.Point(980, 9);
             this.hora.Name = "hora";
-            this.hora.Size = new System.Drawing.Size(48, 20);
+            this.hora.Size = new System.Drawing.Size(60, 29);
             this.hora.TabIndex = 17;
             this.hora.Text = "Hora";
             // 

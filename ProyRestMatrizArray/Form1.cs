@@ -21,15 +21,21 @@ namespace ProyRestMatrizArray
         {
            
             string rut = textBoxPassUsuario.Text;
+           // for (i = 0 ; rut.Length < 9  ; i++ 0)
+            {
 
-            if (rut.Length == 9) {
+                if (rut.Length == 9)
+                {
+                    rut = "0" + rut;
+                }
+           /* if (rut.Length == 9) {
                 rut = "0" + rut;
             }
 
             if (rut.Length == 8)
             {
                 rut = "00" + rut;
-            }
+          */  }
 
             if (rut[8] != '-') {
 
@@ -113,6 +119,16 @@ namespace ProyRestMatrizArray
         }
 
         private void TextBoxUsuario_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

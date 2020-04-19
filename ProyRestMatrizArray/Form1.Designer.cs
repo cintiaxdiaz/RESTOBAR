@@ -38,16 +38,14 @@
             this.horayfecha = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxUsuario
             // 
             this.textBoxUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsuario.Location = new System.Drawing.Point(728, 241);
+            this.textBoxUsuario.Location = new System.Drawing.Point(883, 375);
             this.textBoxUsuario.Multiline = true;
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(174, 39);
@@ -59,7 +57,7 @@
             // textBoxPassUsuario
             // 
             this.textBoxPassUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassUsuario.Location = new System.Drawing.Point(729, 303);
+            this.textBoxPassUsuario.Location = new System.Drawing.Point(884, 437);
             this.textBoxPassUsuario.Multiline = true;
             this.textBoxPassUsuario.Name = "textBoxPassUsuario";
             this.textBoxPassUsuario.Size = new System.Drawing.Size(173, 39);
@@ -71,7 +69,7 @@
             // buttonIngresar
             // 
             this.buttonIngresar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIngresar.Location = new System.Drawing.Point(728, 391);
+            this.buttonIngresar.Location = new System.Drawing.Point(883, 525);
             this.buttonIngresar.Name = "buttonIngresar";
             this.buttonIngresar.Size = new System.Drawing.Size(174, 39);
             this.buttonIngresar.TabIndex = 2;
@@ -83,10 +81,11 @@
             // 
             this.hora.AutoSize = true;
             this.hora.BackColor = System.Drawing.Color.Transparent;
-            this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.Color.White;
             this.hora.Location = new System.Drawing.Point(1091, 9);
             this.hora.Name = "hora";
-            this.hora.Size = new System.Drawing.Size(48, 20);
+            this.hora.Size = new System.Drawing.Size(60, 29);
             this.hora.TabIndex = 3;
             this.hora.Text = "Hora";
             // 
@@ -94,11 +93,11 @@
             // 
             this.fecha.AutoSize = true;
             this.fecha.BackColor = System.Drawing.Color.Transparent;
-            this.fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.fecha.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.ForeColor = System.Drawing.Color.White;
             this.fecha.Location = new System.Drawing.Point(35, 9);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(59, 20);
+            this.fecha.Size = new System.Drawing.Size(69, 29);
             this.fecha.TabIndex = 4;
             this.fecha.Text = "Fecha";
             // 
@@ -111,10 +110,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 83);
+            this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(713, 479);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 18);
+            this.label1.Size = new System.Drawing.Size(392, 26);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rut sin puntos con guión y dígito verificador.";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -123,44 +123,37 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 28);
+            this.label2.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(652, 452);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 24);
+            this.label2.Size = new System.Drawing.Size(199, 26);
             this.label2.TabIndex = 6;
             this.label2.Text = "Usuario y contraseña:";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.Bisque;
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(65, 190);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(439, 179);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(522, 114);
+            this.label3.Font = new System.Drawing.Font("Cambria", 56.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(148)))), ((int)(((byte)(52)))));
+            this.label3.Location = new System.Drawing.Point(393, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 33);
+            this.label3.Size = new System.Drawing.Size(491, 88);
             this.label3.TabIndex = 8;
             this.label3.Text = "BIENVENIDOS";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Tan;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(118)))), ((int)(((byte)(36)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.hora);
             this.Controls.Add(this.buttonIngresar);
@@ -169,8 +162,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,7 +178,6 @@
         private System.Windows.Forms.Timer horayfecha;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
     }
 }
