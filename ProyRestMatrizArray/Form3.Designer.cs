@@ -64,12 +64,11 @@
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.Orden = new System.Windows.Forms.ListBox();
-            this.btnLimpiar = new System.Windows.Forms.Button();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnOrdenar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
@@ -476,28 +475,18 @@
             this.Orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Orden.FormattingEnabled = true;
             this.Orden.ItemHeight = 20;
-            this.Orden.Location = new System.Drawing.Point(925, 116);
+            this.Orden.Location = new System.Drawing.Point(925, 124);
             this.Orden.Name = "Orden";
-            this.Orden.Size = new System.Drawing.Size(261, 364);
+            this.Orden.Size = new System.Drawing.Size(261, 404);
             this.Orden.TabIndex = 1;
             this.Orden.SelectedIndexChanged += new System.EventHandler(this.Orden_SelectedIndexChanged);
-            // 
-            // btnLimpiar
-            // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(982, 578);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(114, 38);
-            this.btnLimpiar.TabIndex = 2;
-            this.btnLimpiar.Text = "Limpiar";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(1078, 18);
+            this.btnCerrar.Location = new System.Drawing.Point(1078, 12);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 34);
+            this.btnCerrar.Size = new System.Drawing.Size(75, 46);
             this.btnCerrar.TabIndex = 3;
             this.btnCerrar.Text = "Atras";
             this.btnCerrar.UseVisualStyleBackColor = true;
@@ -505,25 +494,14 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(698, 552);
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(529, 555);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(122, 50);
+            this.btnAgregar.Size = new System.Drawing.Size(122, 32);
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.Button8_Click);
-            // 
-            // btnOrdenar
-            // 
-            this.btnOrdenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOrdenar.Location = new System.Drawing.Point(1072, 487);
-            this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(114, 48);
-            this.btnOrdenar.TabIndex = 5;
-            this.btnOrdenar.Text = "Ordenar";
-            this.btnOrdenar.UseVisualStyleBackColor = true;
-            this.btnOrdenar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button1
             // 
@@ -541,11 +519,22 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(921, 100);
+            this.label18.Location = new System.Drawing.Point(921, 101);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(72, 20);
             this.label18.TabIndex = 7;
             this.label18.Text = "ORDEN";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(694, 555);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 32);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "Eliminar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Form3
             // 
@@ -554,12 +543,11 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.Orden);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form3";
@@ -605,7 +593,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ListBox Orden;
-        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.GroupBox groupBox4;
@@ -637,8 +624,8 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.Button btnOrdenar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button2;
     }
 }
