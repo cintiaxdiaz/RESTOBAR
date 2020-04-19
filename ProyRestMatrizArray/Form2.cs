@@ -13,16 +13,11 @@ namespace ProyRestMatrizArray
     public partial class Form2 : Form
     {
         Mesa[,] mesas;
-       Label [,] labels;
 
         public Form2() {
             //matriz de label
             
-                labels = new Label[3, 5] {
-                { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
-                { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
-                { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
-            };
+                
 
                 // Matriz de mesas
 
@@ -191,24 +186,37 @@ namespace ProyRestMatrizArray
 
         private void btnRevDisponible_Click(object sender, EventArgs e)
         {
+            Label[,] labels = new Label[3, 5] {
+                { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
+                { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
+                { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
+            };
             for (int i = 0; i < 3; i++)
             {
                 
                 for (int j = 0; j < 5; j++)
                     
                 {
-                    if (mesas[i, j].ocupada)
+                   if (mesas[i, j].ocupada)
                     {
-                        labels[i, j].
+                        labels[i, j].BackColor = Color.Red;
+                        labels[i, j].Text = "OCUPADO";
                     }
-                    else {labels[i,j].
+                   
 
+                    else {
+                        labels[i, j].BackColor = Color.Orange;
+                        labels[i, j].Text = "DISPONIBLE";
                     }
                 }
 
 
             } 
             
+
+        }
+
+        private void Labelmesa1_Click(object sender, EventArgs e) {
 
         }
     }

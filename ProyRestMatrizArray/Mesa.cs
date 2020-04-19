@@ -15,7 +15,7 @@ namespace ProyRestMatrizArray
             ocupada = false;
         }
         public void Ocupar() {
-            ocupada = true;
+            ocupada = True;
         }
     }
 }

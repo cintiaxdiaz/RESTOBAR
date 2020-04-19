@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 33);
+            this.groupBox1.Location = new System.Drawing.Point(75, 43);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(797, 502);
             this.groupBox1.TabIndex = 0;
@@ -495,7 +495,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(529, 555);
+            this.btnAgregar.Location = new System.Drawing.Point(604, 551);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(122, 32);
             this.btnAgregar.TabIndex = 4;
@@ -528,7 +528,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(694, 555);
+            this.button2.Location = new System.Drawing.Point(746, 551);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 32);
             this.button2.TabIndex = 8;

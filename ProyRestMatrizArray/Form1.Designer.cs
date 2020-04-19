@@ -132,10 +132,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Tan;
+            this.groupBox1.BackColor = System.Drawing.Color.Bisque;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(168, 196);
+            this.groupBox1.Location = new System.Drawing.Point(65, 190);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(439, 179);
             this.groupBox1.TabIndex = 7;
@@ -146,7 +146,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(546, 111);
+            this.label3.Location = new System.Drawing.Point(522, 114);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(223, 33);
             this.label3.TabIndex = 8;
