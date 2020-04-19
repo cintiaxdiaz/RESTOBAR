@@ -54,6 +54,7 @@
             this.textBoxUsuario.TabIndex = 0;
             this.textBoxUsuario.Text = "Usuario";
             this.textBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxUsuario.TextChanged += new System.EventHandler(this.TextBoxUsuario_TextChanged);
             // 
             // textBoxPassUsuario
             // 

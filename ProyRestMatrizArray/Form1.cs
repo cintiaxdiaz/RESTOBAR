@@ -111,5 +111,9 @@ namespace ProyRestMatrizArray
         private void TextBoxPassUsuario_TextChanged(object sender, EventArgs e) {
 
         }
+
+        private void TextBoxUsuario_TextChanged(object sender, EventArgs e) {
+
+        }
     }
 }
