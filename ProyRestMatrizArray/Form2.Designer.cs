@@ -46,6 +46,7 @@
             this.btnMesa14 = new System.Windows.Forms.Button();
             this.btnMesa15 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelmesa1 = new System.Windows.Forms.Label();
             this.labelmesa15 = new System.Windows.Forms.Label();
             this.labelmesa14 = new System.Windows.Forms.Label();
             this.labelmesa13 = new System.Windows.Forms.Label();
@@ -60,7 +61,6 @@
             this.labelmesa4 = new System.Windows.Forms.Label();
             this.labelmesa3 = new System.Windows.Forms.Label();
             this.labelmesa2 = new System.Windows.Forms.Label();
-            this.labelmesa1 = new System.Windows.Forms.Label();
             this.fecha = new System.Windows.Forms.Label();
             this.hora = new System.Windows.Forms.Label();
             this.horayfecha = new System.Windows.Forms.Timer(this.components);
@@ -74,7 +74,7 @@
             this.btnMesa1.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa1.Location = new System.Drawing.Point(48, 54);
             this.btnMesa1.Name = "btnMesa1";
-            this.btnMesa1.Size = new System.Drawing.Size(109, 106);
+            this.btnMesa1.Size = new System.Drawing.Size(115, 115);
             this.btnMesa1.TabIndex = 0;
             this.btnMesa1.Text = "M 1";
             this.btnMesa1.UseVisualStyleBackColor = true;
@@ -84,9 +84,9 @@
             // 
             this.btnMesa2.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa2.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa2.Image")));
-            this.btnMesa2.Location = new System.Drawing.Point(187, 54);
+            this.btnMesa2.Location = new System.Drawing.Point(178, 54);
             this.btnMesa2.Name = "btnMesa2";
-            this.btnMesa2.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa2.Size = new System.Drawing.Size(115, 115);
             this.btnMesa2.TabIndex = 1;
             this.btnMesa2.Text = "M 2";
             this.btnMesa2.UseVisualStyleBackColor = true;
@@ -96,9 +96,9 @@
             // 
             this.btnMesa3.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa3.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa3.Image")));
-            this.btnMesa3.Location = new System.Drawing.Point(300, 54);
+            this.btnMesa3.Location = new System.Drawing.Point(307, 54);
             this.btnMesa3.Name = "btnMesa3";
-            this.btnMesa3.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa3.Size = new System.Drawing.Size(115, 115);
             this.btnMesa3.TabIndex = 2;
             this.btnMesa3.Text = "M 3";
             this.btnMesa3.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             this.btnMesa4.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa4.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa4.Image")));
-            this.btnMesa4.Location = new System.Drawing.Point(417, 54);
+            this.btnMesa4.Location = new System.Drawing.Point(437, 54);
             this.btnMesa4.Name = "btnMesa4";
-            this.btnMesa4.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa4.Size = new System.Drawing.Size(115, 115);
             this.btnMesa4.TabIndex = 3;
             this.btnMesa4.Text = "M 4";
             this.btnMesa4.UseVisualStyleBackColor = true;
@@ -120,9 +120,9 @@
             // 
             this.btnMesa5.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa5.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa5.Image")));
-            this.btnMesa5.Location = new System.Drawing.Point(530, 54);
+            this.btnMesa5.Location = new System.Drawing.Point(569, 54);
             this.btnMesa5.Name = "btnMesa5";
-            this.btnMesa5.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa5.Size = new System.Drawing.Size(115, 115);
             this.btnMesa5.TabIndex = 4;
             this.btnMesa5.Text = "M 5";
             this.btnMesa5.UseVisualStyleBackColor = true;
@@ -132,9 +132,9 @@
             // 
             this.btnMesa6.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa6.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa6.Image")));
-            this.btnMesa6.Location = new System.Drawing.Point(60, 178);
+            this.btnMesa6.Location = new System.Drawing.Point(48, 203);
             this.btnMesa6.Name = "btnMesa6";
-            this.btnMesa6.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa6.Size = new System.Drawing.Size(115, 115);
             this.btnMesa6.TabIndex = 5;
             this.btnMesa6.Text = "M 6";
             this.btnMesa6.UseVisualStyleBackColor = true;
@@ -144,9 +144,9 @@
             // 
             this.btnMesa7.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa7.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa7.Image")));
-            this.btnMesa7.Location = new System.Drawing.Point(187, 178);
+            this.btnMesa7.Location = new System.Drawing.Point(178, 203);
             this.btnMesa7.Name = "btnMesa7";
-            this.btnMesa7.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa7.Size = new System.Drawing.Size(115, 115);
             this.btnMesa7.TabIndex = 6;
             this.btnMesa7.Text = "M 7";
             this.btnMesa7.UseVisualStyleBackColor = true;
@@ -156,9 +156,9 @@
             // 
             this.btnMesa8.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa8.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa8.Image")));
-            this.btnMesa8.Location = new System.Drawing.Point(300, 178);
+            this.btnMesa8.Location = new System.Drawing.Point(307, 203);
             this.btnMesa8.Name = "btnMesa8";
-            this.btnMesa8.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa8.Size = new System.Drawing.Size(115, 115);
             this.btnMesa8.TabIndex = 7;
             this.btnMesa8.Text = "M 8";
             this.btnMesa8.UseVisualStyleBackColor = true;
@@ -168,9 +168,9 @@
             // 
             this.btnMesa9.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa9.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa9.Image")));
-            this.btnMesa9.Location = new System.Drawing.Point(417, 178);
+            this.btnMesa9.Location = new System.Drawing.Point(437, 201);
             this.btnMesa9.Name = "btnMesa9";
-            this.btnMesa9.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa9.Size = new System.Drawing.Size(115, 115);
             this.btnMesa9.TabIndex = 8;
             this.btnMesa9.Text = "M 9";
             this.btnMesa9.UseVisualStyleBackColor = true;
@@ -180,9 +180,9 @@
             // 
             this.btnMesa10.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa10.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa10.Image")));
-            this.btnMesa10.Location = new System.Drawing.Point(530, 178);
+            this.btnMesa10.Location = new System.Drawing.Point(569, 201);
             this.btnMesa10.Name = "btnMesa10";
-            this.btnMesa10.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa10.Size = new System.Drawing.Size(115, 115);
             this.btnMesa10.TabIndex = 9;
             this.btnMesa10.Text = "M 10";
             this.btnMesa10.UseVisualStyleBackColor = true;
@@ -192,9 +192,9 @@
             // 
             this.btnMesa11.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa11.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa11.Image")));
-            this.btnMesa11.Location = new System.Drawing.Point(60, 299);
+            this.btnMesa11.Location = new System.Drawing.Point(48, 353);
             this.btnMesa11.Name = "btnMesa11";
-            this.btnMesa11.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa11.Size = new System.Drawing.Size(115, 115);
             this.btnMesa11.TabIndex = 10;
             this.btnMesa11.Text = "M 11";
             this.btnMesa11.UseVisualStyleBackColor = true;
@@ -204,9 +204,9 @@
             // 
             this.btnMesa12.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa12.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa12.Image")));
-            this.btnMesa12.Location = new System.Drawing.Point(187, 299);
+            this.btnMesa12.Location = new System.Drawing.Point(179, 353);
             this.btnMesa12.Name = "btnMesa12";
-            this.btnMesa12.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa12.Size = new System.Drawing.Size(115, 115);
             this.btnMesa12.TabIndex = 11;
             this.btnMesa12.Text = "M 12";
             this.btnMesa12.UseVisualStyleBackColor = true;
@@ -216,9 +216,9 @@
             // 
             this.btnMesa13.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa13.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa13.Image")));
-            this.btnMesa13.Location = new System.Drawing.Point(300, 299);
+            this.btnMesa13.Location = new System.Drawing.Point(307, 353);
             this.btnMesa13.Name = "btnMesa13";
-            this.btnMesa13.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa13.Size = new System.Drawing.Size(115, 115);
             this.btnMesa13.TabIndex = 12;
             this.btnMesa13.Text = "M 13";
             this.btnMesa13.UseVisualStyleBackColor = true;
@@ -228,9 +228,9 @@
             // 
             this.btnMesa14.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa14.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa14.Image")));
-            this.btnMesa14.Location = new System.Drawing.Point(417, 299);
+            this.btnMesa14.Location = new System.Drawing.Point(438, 353);
             this.btnMesa14.Name = "btnMesa14";
-            this.btnMesa14.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa14.Size = new System.Drawing.Size(115, 115);
             this.btnMesa14.TabIndex = 13;
             this.btnMesa14.Text = "M 14";
             this.btnMesa14.UseVisualStyleBackColor = true;
@@ -240,9 +240,9 @@
             // 
             this.btnMesa15.Font = new System.Drawing.Font("Calibri", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMesa15.Image = ((System.Drawing.Image)(resources.GetObject("btnMesa15.Image")));
-            this.btnMesa15.Location = new System.Drawing.Point(530, 299);
+            this.btnMesa15.Location = new System.Drawing.Point(569, 353);
             this.btnMesa15.Name = "btnMesa15";
-            this.btnMesa15.Size = new System.Drawing.Size(79, 80);
+            this.btnMesa15.Size = new System.Drawing.Size(115, 115);
             this.btnMesa15.TabIndex = 14;
             this.btnMesa15.Text = "M 15";
             this.btnMesa15.UseVisualStyleBackColor = true;
@@ -250,7 +250,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.labelmesa1);
             this.groupBox1.Controls.Add(this.labelmesa15);
             this.groupBox1.Controls.Add(this.labelmesa14);
             this.groupBox1.Controls.Add(this.labelmesa13);
@@ -265,7 +266,6 @@
             this.groupBox1.Controls.Add(this.labelmesa4);
             this.groupBox1.Controls.Add(this.labelmesa3);
             this.groupBox1.Controls.Add(this.labelmesa2);
-            this.groupBox1.Controls.Add(this.labelmesa1);
             this.groupBox1.Controls.Add(this.btnMesa1);
             this.groupBox1.Controls.Add(this.btnMesa15);
             this.groupBox1.Controls.Add(this.btnMesa2);
@@ -290,158 +290,185 @@
             this.groupBox1.Text = "MESAS";
             this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
-            // labelmesa15
-            // 
-            this.labelmesa15.AutoSize = true;
-            this.labelmesa15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa15.Location = new System.Drawing.Point(527, 382);
-            this.labelmesa15.Name = "labelmesa15";
-            this.labelmesa15.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa15.TabIndex = 29;
-            this.labelmesa15.Text = "labelMesa15";
-            // 
-            // labelmesa14
-            // 
-            this.labelmesa14.AutoSize = true;
-            this.labelmesa14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa14.Location = new System.Drawing.Point(414, 382);
-            this.labelmesa14.Name = "labelmesa14";
-            this.labelmesa14.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa14.TabIndex = 28;
-            this.labelmesa14.Text = "labelMesa14";
-            // 
-            // labelmesa13
-            // 
-            this.labelmesa13.AutoSize = true;
-            this.labelmesa13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa13.Location = new System.Drawing.Point(297, 382);
-            this.labelmesa13.Name = "labelmesa13";
-            this.labelmesa13.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa13.TabIndex = 27;
-            this.labelmesa13.Text = "labelMesa13";
-            // 
-            // labelmesa12
-            // 
-            this.labelmesa12.AutoSize = true;
-            this.labelmesa12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa12.Location = new System.Drawing.Point(184, 382);
-            this.labelmesa12.Name = "labelmesa12";
-            this.labelmesa12.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa12.TabIndex = 26;
-            this.labelmesa12.Text = "labelMesa12";
-            // 
-            // labelmesa11
-            // 
-            this.labelmesa11.AutoSize = true;
-            this.labelmesa11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa11.Location = new System.Drawing.Point(57, 382);
-            this.labelmesa11.Name = "labelmesa11";
-            this.labelmesa11.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa11.TabIndex = 25;
-            this.labelmesa11.Text = "labelMesa11";
-            // 
-            // labelmesa10
-            // 
-            this.labelmesa10.AutoSize = true;
-            this.labelmesa10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa10.Location = new System.Drawing.Point(527, 261);
-            this.labelmesa10.Name = "labelmesa10";
-            this.labelmesa10.Size = new System.Drawing.Size(97, 16);
-            this.labelmesa10.TabIndex = 24;
-            this.labelmesa10.Text = "labelMesa10";
-            // 
-            // labelmesa9
-            // 
-            this.labelmesa9.AutoSize = true;
-            this.labelmesa9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa9.Location = new System.Drawing.Point(414, 261);
-            this.labelmesa9.Name = "labelmesa9";
-            this.labelmesa9.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa9.TabIndex = 23;
-            this.labelmesa9.Text = "labelMesa9";
-            // 
-            // labelmesa8
-            // 
-            this.labelmesa8.AutoSize = true;
-            this.labelmesa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa8.Location = new System.Drawing.Point(297, 261);
-            this.labelmesa8.Name = "labelmesa8";
-            this.labelmesa8.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa8.TabIndex = 22;
-            this.labelmesa8.Text = "labelMesa8";
-            // 
-            // labelmesa7
-            // 
-            this.labelmesa7.AutoSize = true;
-            this.labelmesa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa7.Location = new System.Drawing.Point(184, 261);
-            this.labelmesa7.Name = "labelmesa7";
-            this.labelmesa7.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa7.TabIndex = 21;
-            this.labelmesa7.Text = "labelMesa7";
-            // 
-            // labelmesa6
-            // 
-            this.labelmesa6.AutoSize = true;
-            this.labelmesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa6.Location = new System.Drawing.Point(57, 261);
-            this.labelmesa6.Name = "labelmesa6";
-            this.labelmesa6.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa6.TabIndex = 20;
-            this.labelmesa6.Text = "labelMesa6";
-            // 
-            // labelmesa5
-            // 
-            this.labelmesa5.AutoSize = true;
-            this.labelmesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa5.Location = new System.Drawing.Point(527, 136);
-            this.labelmesa5.Name = "labelmesa5";
-            this.labelmesa5.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa5.TabIndex = 19;
-            this.labelmesa5.Text = "labelMesa5";
-            // 
-            // labelmesa4
-            // 
-            this.labelmesa4.AutoSize = true;
-            this.labelmesa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa4.Location = new System.Drawing.Point(414, 137);
-            this.labelmesa4.Name = "labelmesa4";
-            this.labelmesa4.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa4.TabIndex = 18;
-            this.labelmesa4.Text = "labelMesa4";
-            // 
-            // labelmesa3
-            // 
-            this.labelmesa3.AutoSize = true;
-            this.labelmesa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa3.Location = new System.Drawing.Point(296, 136);
-            this.labelmesa3.Name = "labelmesa3";
-            this.labelmesa3.Size = new System.Drawing.Size(89, 16);
-            this.labelmesa3.TabIndex = 17;
-            this.labelmesa3.Text = "labelMesa3";
-            // 
-            // labelmesa2
-            // 
-            this.labelmesa2.AutoSize = true;
-            this.labelmesa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa2.Location = new System.Drawing.Point(183, 137);
-            this.labelmesa2.Name = "labelmesa2";
-            this.labelmesa2.Size = new System.Drawing.Size(90, 17);
-            this.labelmesa2.TabIndex = 16;
-            this.labelmesa2.Text = "labelMesa2";
-            // 
             // labelmesa1
             // 
             this.labelmesa1.AutoSize = true;
             this.labelmesa1.BackColor = System.Drawing.Color.Transparent;
-            this.labelmesa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelmesa1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labelmesa1.Location = new System.Drawing.Point(42, 165);
+            this.labelmesa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa1.Location = new System.Drawing.Point(78, 180);
             this.labelmesa1.Name = "labelmesa1";
-            this.labelmesa1.Size = new System.Drawing.Size(162, 31);
-            this.labelmesa1.TabIndex = 20;
-            this.labelmesa1.Text = "labelMesa1";
-            this.labelmesa1.Click += new System.EventHandler(this.Labelmesa1_Click);
+            this.labelmesa1.Size = new System.Drawing.Size(64, 17);
+            this.labelmesa1.TabIndex = 30;
+            this.labelmesa1.Text = "MESA 1";
+            // 
+            // labelmesa15
+            // 
+            this.labelmesa15.AutoSize = true;
+            this.labelmesa15.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa15.Location = new System.Drawing.Point(592, 471);
+            this.labelmesa15.Name = "labelmesa15";
+            this.labelmesa15.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa15.TabIndex = 29;
+            this.labelmesa15.Text = "MESA 15";
+            // 
+            // labelmesa14
+            // 
+            this.labelmesa14.AutoSize = true;
+            this.labelmesa14.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa14.Location = new System.Drawing.Point(462, 471);
+            this.labelmesa14.Name = "labelmesa14";
+            this.labelmesa14.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa14.TabIndex = 28;
+            this.labelmesa14.Text = "MESA 14";
+            // 
+            // labelmesa13
+            // 
+            this.labelmesa13.AutoSize = true;
+            this.labelmesa13.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa13.Location = new System.Drawing.Point(332, 471);
+            this.labelmesa13.Name = "labelmesa13";
+            this.labelmesa13.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa13.TabIndex = 27;
+            this.labelmesa13.Text = "MESA 13";
+            // 
+            // labelmesa12
+            // 
+            this.labelmesa12.AutoSize = true;
+            this.labelmesa12.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa12.Location = new System.Drawing.Point(199, 471);
+            this.labelmesa12.Name = "labelmesa12";
+            this.labelmesa12.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa12.TabIndex = 26;
+            this.labelmesa12.Text = "MESA 12";
+            // 
+            // labelmesa11
+            // 
+            this.labelmesa11.AutoSize = true;
+            this.labelmesa11.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa11.Location = new System.Drawing.Point(70, 471);
+            this.labelmesa11.Name = "labelmesa11";
+            this.labelmesa11.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa11.TabIndex = 25;
+            this.labelmesa11.Text = "MESA 11";
+            // 
+            // labelmesa10
+            // 
+            this.labelmesa10.AutoSize = true;
+            this.labelmesa10.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa10.Location = new System.Drawing.Point(592, 329);
+            this.labelmesa10.Name = "labelmesa10";
+            this.labelmesa10.Size = new System.Drawing.Size(70, 16);
+            this.labelmesa10.TabIndex = 24;
+            this.labelmesa10.Text = "MESA 10";
+            // 
+            // labelmesa9
+            // 
+            this.labelmesa9.AutoSize = true;
+            this.labelmesa9.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa9.Location = new System.Drawing.Point(462, 329);
+            this.labelmesa9.Name = "labelmesa9";
+            this.labelmesa9.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa9.TabIndex = 23;
+            this.labelmesa9.Text = "MESA 9";
+            // 
+            // labelmesa8
+            // 
+            this.labelmesa8.AutoSize = true;
+            this.labelmesa8.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa8.Location = new System.Drawing.Point(332, 329);
+            this.labelmesa8.Name = "labelmesa8";
+            this.labelmesa8.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa8.TabIndex = 22;
+            this.labelmesa8.Text = "MESA 8";
+            // 
+            // labelmesa7
+            // 
+            this.labelmesa7.AutoSize = true;
+            this.labelmesa7.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa7.Location = new System.Drawing.Point(205, 329);
+            this.labelmesa7.Name = "labelmesa7";
+            this.labelmesa7.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa7.TabIndex = 21;
+            this.labelmesa7.Text = "MESA 7";
+            // 
+            // labelmesa6
+            // 
+            this.labelmesa6.AutoSize = true;
+            this.labelmesa6.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa6.Location = new System.Drawing.Point(78, 329);
+            this.labelmesa6.Name = "labelmesa6";
+            this.labelmesa6.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa6.TabIndex = 20;
+            this.labelmesa6.Text = "MESA 6";
+            // 
+            // labelmesa5
+            // 
+            this.labelmesa5.AutoSize = true;
+            this.labelmesa5.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa5.Location = new System.Drawing.Point(583, 181);
+            this.labelmesa5.Name = "labelmesa5";
+            this.labelmesa5.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa5.TabIndex = 19;
+            this.labelmesa5.Text = "MESA 5";
+            // 
+            // labelmesa4
+            // 
+            this.labelmesa4.AutoSize = true;
+            this.labelmesa4.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa4.Location = new System.Drawing.Point(462, 181);
+            this.labelmesa4.Name = "labelmesa4";
+            this.labelmesa4.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa4.TabIndex = 18;
+            this.labelmesa4.Text = "MESA 4";
+            // 
+            // labelmesa3
+            // 
+            this.labelmesa3.AutoSize = true;
+            this.labelmesa3.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa3.Location = new System.Drawing.Point(332, 181);
+            this.labelmesa3.Name = "labelmesa3";
+            this.labelmesa3.Size = new System.Drawing.Size(62, 16);
+            this.labelmesa3.TabIndex = 17;
+            this.labelmesa3.Text = "MESA 3";
+            // 
+            // labelmesa2
+            // 
+            this.labelmesa2.AutoSize = true;
+            this.labelmesa2.BackColor = System.Drawing.Color.Transparent;
+            this.labelmesa2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelmesa2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.labelmesa2.Location = new System.Drawing.Point(205, 181);
+            this.labelmesa2.Name = "labelmesa2";
+            this.labelmesa2.Size = new System.Drawing.Size(64, 17);
+            this.labelmesa2.TabIndex = 16;
+            this.labelmesa2.Text = "MESA 2";
             // 
             // fecha
             // 
@@ -552,7 +579,7 @@
         private System.Windows.Forms.Label labelmesa4;
         private System.Windows.Forms.Label labelmesa3;
         private System.Windows.Forms.Label labelmesa2;
-        private System.Windows.Forms.Label labelmesa1;
         private System.Windows.Forms.Button btnRevDisponible;
+        private System.Windows.Forms.Label labelmesa1;
     }
 }
