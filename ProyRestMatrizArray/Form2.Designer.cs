@@ -260,6 +260,7 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MESAS";
+            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // fecha
             // 
@@ -278,7 +279,7 @@
             this.hora.AutoSize = true;
             this.hora.BackColor = System.Drawing.Color.Transparent;
             this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora.Location = new System.Drawing.Point(1099, 24);
+            this.hora.Location = new System.Drawing.Point(982, 16);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(48, 20);
             this.hora.TabIndex = 17;

@@ -188,6 +188,10 @@ namespace ProyRestMatrizArray
             //  mesas[0].ocupada
             formulario.Show();
         }
+
+        private void GroupBox1_Enter(object sender, EventArgs e) {
+
+        }
     }
 }
 

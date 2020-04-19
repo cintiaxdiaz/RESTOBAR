@@ -61,7 +61,7 @@ namespace ProyRestMatrizArray
                 }
                 Orden.Items.Add((cantidadComidas[i].Value + mesa.pedidos[i]) + "  " + comidas[i]);
                 //MAGIA
-                mesa.pedidos[i] = (int) cantidadComidas[i].Value;
+                mesa.pedidos[i] = (int)cantidadComidas[i].Value;
 
                 mesa.Ocupar();
             }
@@ -85,9 +85,20 @@ namespace ProyRestMatrizArray
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void button1_Click(object sender, EventArgs e) {
 
+        }
+
+        private void Button1_Click_1(object sender, EventArgs e) {
+
+            if (MessageBox.Show("Desea Cerrar sesión?", "Cerrar", MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question) == DialogResult.Yes) {
+
+                Form1 formulario1 = new Form1();
+                formulario1.Show();
+                formulario1.Visible = true;
+                Visible = false;
+            }
         }
     }
 }

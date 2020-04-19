@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             this.textBoxUsuario.BackColor = System.Drawing.SystemColors.Window;
             this.textBoxUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsuario.Location = new System.Drawing.Point(497, 128);
+            this.textBoxUsuario.Location = new System.Drawing.Point(728, 241);
             this.textBoxUsuario.Multiline = true;
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(174, 39);
@@ -57,18 +58,19 @@
             // textBoxPassUsuario
             // 
             this.textBoxPassUsuario.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPassUsuario.Location = new System.Drawing.Point(497, 195);
+            this.textBoxPassUsuario.Location = new System.Drawing.Point(729, 303);
             this.textBoxPassUsuario.Multiline = true;
             this.textBoxPassUsuario.Name = "textBoxPassUsuario";
             this.textBoxPassUsuario.Size = new System.Drawing.Size(173, 39);
             this.textBoxPassUsuario.TabIndex = 1;
             this.textBoxPassUsuario.Text = "Contraseña";
             this.textBoxPassUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxPassUsuario.TextChanged += new System.EventHandler(this.TextBoxPassUsuario_TextChanged);
             // 
             // buttonIngresar
             // 
             this.buttonIngresar.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonIngresar.Location = new System.Drawing.Point(496, 270);
+            this.buttonIngresar.Location = new System.Drawing.Point(728, 391);
             this.buttonIngresar.Name = "buttonIngresar";
             this.buttonIngresar.Size = new System.Drawing.Size(174, 39);
             this.buttonIngresar.TabIndex = 2;
@@ -81,7 +83,7 @@
             this.hora.AutoSize = true;
             this.hora.BackColor = System.Drawing.Color.Transparent;
             this.hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora.Location = new System.Drawing.Point(687, 9);
+            this.hora.Location = new System.Drawing.Point(1091, 9);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(48, 20);
             this.hora.TabIndex = 3;
@@ -132,11 +134,22 @@
             this.groupBox1.BackColor = System.Drawing.Color.Tan;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 158);
+            this.groupBox1.Location = new System.Drawing.Point(168, 196);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(427, 138);
+            this.groupBox1.Size = new System.Drawing.Size(439, 179);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(546, 111);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(223, 33);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "BIENVENIDOS";
             // 
             // Form1
             // 
@@ -145,6 +158,7 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.fecha);
             this.Controls.Add(this.hora);
@@ -172,6 +186,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

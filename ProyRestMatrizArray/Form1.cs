@@ -33,10 +33,8 @@ namespace ProyRestMatrizArray
 
             if (rut[8] != '-') {
 
-               // textBox2.Text = "Incorrecto, falta guión";
                 return;
             }
-
 
             int n0, n1, n2, n3, n4, n5, n6, n7 = 0;
 
@@ -107,6 +105,10 @@ namespace ProyRestMatrizArray
         }
 
         private void Label1_Click(object sender, EventArgs e) {
+
+        }
+
+        private void TextBoxPassUsuario_TextChanged(object sender, EventArgs e) {
 
         }
     }
