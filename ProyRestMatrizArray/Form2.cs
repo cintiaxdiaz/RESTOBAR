@@ -31,7 +31,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa1_Click(object sender, EventArgs e) {
             Mesa mesita = mesas[0,0];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             formulario.Show();
         }
@@ -44,7 +44,7 @@ namespace ProyRestMatrizArray
 
         private void BtnMesa2_Click(object sender, EventArgs e) {
             Mesa mesita = mesas[0,1];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
           //  mesas[0].ocupada
             formulario.Show();
@@ -68,7 +68,7 @@ namespace ProyRestMatrizArray
         private void btnMesa3_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[0,2];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -77,7 +77,7 @@ namespace ProyRestMatrizArray
         private void btnMesa4_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[0,3];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             formulario.Show();
         }
@@ -85,7 +85,7 @@ namespace ProyRestMatrizArray
         private void btnMesa5_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[0,4];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             formulario.Show();
         }
@@ -93,7 +93,7 @@ namespace ProyRestMatrizArray
         private void btnMesa6_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[1,0];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -102,7 +102,7 @@ namespace ProyRestMatrizArray
         private void btnMesa7_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[1,1];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -111,7 +111,7 @@ namespace ProyRestMatrizArray
         private void btnMesa8_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[1,2];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -120,7 +120,7 @@ namespace ProyRestMatrizArray
         private void btnMesa9_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[1,3];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -129,7 +129,7 @@ namespace ProyRestMatrizArray
         private void btnMesa10_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[1,4];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -138,7 +138,7 @@ namespace ProyRestMatrizArray
         private void btnMesa11_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[2,0];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -147,7 +147,7 @@ namespace ProyRestMatrizArray
         private void btnMesa12_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[2,1];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -156,7 +156,7 @@ namespace ProyRestMatrizArray
         private void btnMesa13_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[2,2];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -165,7 +165,7 @@ namespace ProyRestMatrizArray
         private void btnMesa14_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[2,3];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -174,7 +174,7 @@ namespace ProyRestMatrizArray
         private void btnMesa15_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[2,4];
-            Form formulario = new Form3(mesita);
+            Form formulario = new Form3(mesita, this);
 
             //  mesas[0].ocupada
             formulario.Show();
@@ -214,6 +214,25 @@ namespace ProyRestMatrizArray
             } 
             
 
+        }
+
+        public void ActualizarDisponible() {
+            Label[,] labels = new Label[3, 5] {
+                { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
+                { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
+                { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
+            };
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 5; j++) {
+                    if (mesas[i, j].ocupada) {
+                        labels[i, j].BackColor = Color.Red;
+                        labels[i, j].Text = "OCUPADO";
+                    } else {
+                        labels[i, j].BackColor = Color.Orange;
+                        labels[i, j].Text = "DISPONIBLE";
+                    }
+                }
+            }
         }
 
         private void Labelmesa1_Click(object sender, EventArgs e) {

@@ -13,6 +13,7 @@ namespace ProyRestMatrizArray
     public partial class Form3 : Form
     {
         Mesa mesa;
+        Form2 form2;
         string[] comidas = new string[15] {"Espagueti a la boloñesa", "Espagueti a la cherry", "Espagueti con salsa blanca",
                 "Lasaña", "Hamburguesa de la casa", "Hot dog CIJOSE", "Papas fritas", "Agua", "Coca-cola", "Fanta", "Limonada frapp",
                 "Cerveza", "Pisco", "Mojito", "Cuba libre"};
@@ -21,8 +22,9 @@ namespace ProyRestMatrizArray
             InitializeComponent();
         }
 
-        public Form3(Mesa table) {
+        public Form3(Mesa table, Form2 form_2) {
             mesa = table;
+            form2 = form_2;
             InitializeComponent();
             for (int i = 0; i < comidas.Length; i++) {
                 if (mesa.pedidos[i] == 0) {
@@ -86,6 +88,7 @@ namespace ProyRestMatrizArray
         }
 
         private void Button7_Click(object sender, EventArgs e) {
+            form2.ActualizarDisponible();
             /*
             if (MessageBox.Show("Desea salir del menú?", "Salir", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)*/ {
