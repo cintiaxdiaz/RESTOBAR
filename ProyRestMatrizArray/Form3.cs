@@ -14,9 +14,12 @@ namespace ProyRestMatrizArray
     {
         Mesa mesa;
         Form2 form2;
-        string[] comidas = new string[15] {"Espagueti a la boloñesa", "Espagueti a la cherry", "Espagueti con salsa blanca",
-                "Lasaña", "Hamburguesa de la casa", "Hot dog CIJOSE", "Papas fritas", "Agua", "Coca-cola", "Fanta", "Limonada frapp",
-                "Cerveza", "Pisco", "Mojito", "Cuba libre"};
+        string[] comidas = new string[15] 
+        {
+            "Espagueti a la boloñesa", "Espagueti a la cherry", "Espagueti con salsa blanca",
+            "Lasaña", "Hamburguesa de la casa", "Hot dog CIJOSE", "Papas fritas", "Agua", "Coca-cola",
+            "Fanta", "Limonada frapp","Cerveza", "Pisco", "Mojito", "Cuba libre"
+        };
      
         public Form3() {
             InitializeComponent();
@@ -28,6 +31,7 @@ namespace ProyRestMatrizArray
             InitializeComponent();
 
             for (int i = 0; i < comidas.Length; i++) {
+
                 if (mesa.pedidos[i] == 0) {
                     continue;
                 }
@@ -115,7 +119,8 @@ namespace ProyRestMatrizArray
             }
 
             Orden.Items.Clear();
-            NumericUpDown[] cantidadComidas = new NumericUpDown[15] {
+            NumericUpDown[] cantidadComidas = new NumericUpDown[15]
+            {
                 numericUpDown1, numericUpDown2, numericUpDown3,
                 numericUpDown4, numericUpDown5, numericUpDown6,
                 numericUpDown7, numericUpDown8, numericUpDown9,
@@ -125,11 +130,13 @@ namespace ProyRestMatrizArray
 
             for (int i = 0; i < comidas.Length; i++) {
                 decimal total = mesa.pedidos[i] - cantidadComidas[i].Value;
+
                 if (total < 0) {
                     MessageBox.Show("Producto no fue solicitado");
                     return;
                 }
                 mesa.pedidos[i] = (int)total;
+
                 if (total == 0) {
                     continue;
                 }
