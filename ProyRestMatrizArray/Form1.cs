@@ -21,7 +21,7 @@ namespace ProyRestMatrizArray
         {
            
             string rut = textBoxPassUsuario.Text;
-           // for (i = 0 ; rut.Length < 9  ; i++ 0)
+           
             {
 
                 if (rut.Length == 9)
@@ -38,14 +38,7 @@ namespace ProyRestMatrizArray
                 { rut = "000000" + rut; }
                 if (rut.Length == 3)
                 { rut = "0000000" + rut; }
-                /* if (rut.Length == 9) {
-                     rut = "0" + rut;
-                 }
-
-                 if (rut.Length == 8)
-                 {
-                     rut = "00" + rut;
-               */
+                
             }
 
             if (rut[8] != '-') {
