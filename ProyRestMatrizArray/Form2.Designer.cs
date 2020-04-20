@@ -65,7 +65,6 @@
             this.hora = new System.Windows.Forms.Label();
             this.horayfecha = new System.Windows.Forms.Timer(this.components);
             this.button1 = new System.Windows.Forms.Button();
-            this.btnRevDisponible = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +87,6 @@
             this.btnMesa2.Name = "btnMesa2";
             this.btnMesa2.Size = new System.Drawing.Size(169, 144);
             this.btnMesa2.TabIndex = 1;
-            this.btnMesa2.Text = "M 2";
             this.btnMesa2.UseVisualStyleBackColor = true;
             this.btnMesa2.Click += new System.EventHandler(this.BtnMesa2_Click);
             // 
@@ -100,7 +98,6 @@
             this.btnMesa3.Name = "btnMesa3";
             this.btnMesa3.Size = new System.Drawing.Size(169, 144);
             this.btnMesa3.TabIndex = 2;
-            this.btnMesa3.Text = "M 3";
             this.btnMesa3.UseVisualStyleBackColor = true;
             this.btnMesa3.Click += new System.EventHandler(this.btnMesa3_Click);
             // 
@@ -112,7 +109,6 @@
             this.btnMesa4.Name = "btnMesa4";
             this.btnMesa4.Size = new System.Drawing.Size(169, 144);
             this.btnMesa4.TabIndex = 3;
-            this.btnMesa4.Text = "M 4";
             this.btnMesa4.UseVisualStyleBackColor = true;
             this.btnMesa4.Click += new System.EventHandler(this.btnMesa4_Click);
             // 
@@ -124,7 +120,6 @@
             this.btnMesa5.Name = "btnMesa5";
             this.btnMesa5.Size = new System.Drawing.Size(169, 144);
             this.btnMesa5.TabIndex = 4;
-            this.btnMesa5.Text = "M 5";
             this.btnMesa5.UseVisualStyleBackColor = true;
             this.btnMesa5.Click += new System.EventHandler(this.btnMesa5_Click);
             // 
@@ -136,7 +131,6 @@
             this.btnMesa6.Name = "btnMesa6";
             this.btnMesa6.Size = new System.Drawing.Size(169, 144);
             this.btnMesa6.TabIndex = 5;
-            this.btnMesa6.Text = "M 6";
             this.btnMesa6.UseVisualStyleBackColor = true;
             this.btnMesa6.Click += new System.EventHandler(this.btnMesa6_Click);
             // 
@@ -148,7 +142,6 @@
             this.btnMesa7.Name = "btnMesa7";
             this.btnMesa7.Size = new System.Drawing.Size(169, 144);
             this.btnMesa7.TabIndex = 6;
-            this.btnMesa7.Text = "M 7";
             this.btnMesa7.UseVisualStyleBackColor = true;
             this.btnMesa7.Click += new System.EventHandler(this.btnMesa7_Click);
             // 
@@ -160,7 +153,6 @@
             this.btnMesa8.Name = "btnMesa8";
             this.btnMesa8.Size = new System.Drawing.Size(169, 144);
             this.btnMesa8.TabIndex = 7;
-            this.btnMesa8.Text = "M 8";
             this.btnMesa8.UseVisualStyleBackColor = true;
             this.btnMesa8.Click += new System.EventHandler(this.btnMesa8_Click);
             // 
@@ -172,7 +164,6 @@
             this.btnMesa9.Name = "btnMesa9";
             this.btnMesa9.Size = new System.Drawing.Size(169, 144);
             this.btnMesa9.TabIndex = 8;
-            this.btnMesa9.Text = "M 9";
             this.btnMesa9.UseVisualStyleBackColor = true;
             this.btnMesa9.Click += new System.EventHandler(this.btnMesa9_Click);
             // 
@@ -184,7 +175,6 @@
             this.btnMesa10.Name = "btnMesa10";
             this.btnMesa10.Size = new System.Drawing.Size(169, 144);
             this.btnMesa10.TabIndex = 9;
-            this.btnMesa10.Text = "M 10";
             this.btnMesa10.UseVisualStyleBackColor = true;
             this.btnMesa10.Click += new System.EventHandler(this.btnMesa10_Click);
             // 
@@ -196,7 +186,6 @@
             this.btnMesa11.Name = "btnMesa11";
             this.btnMesa11.Size = new System.Drawing.Size(169, 144);
             this.btnMesa11.TabIndex = 10;
-            this.btnMesa11.Text = "M 11";
             this.btnMesa11.UseVisualStyleBackColor = true;
             this.btnMesa11.Click += new System.EventHandler(this.btnMesa11_Click);
             // 
@@ -208,7 +197,6 @@
             this.btnMesa12.Name = "btnMesa12";
             this.btnMesa12.Size = new System.Drawing.Size(169, 144);
             this.btnMesa12.TabIndex = 11;
-            this.btnMesa12.Text = "M 12";
             this.btnMesa12.UseVisualStyleBackColor = true;
             this.btnMesa12.Click += new System.EventHandler(this.btnMesa12_Click);
             // 
@@ -220,7 +208,6 @@
             this.btnMesa13.Name = "btnMesa13";
             this.btnMesa13.Size = new System.Drawing.Size(169, 144);
             this.btnMesa13.TabIndex = 12;
-            this.btnMesa13.Text = "M 13";
             this.btnMesa13.UseVisualStyleBackColor = true;
             this.btnMesa13.Click += new System.EventHandler(this.btnMesa13_Click);
             // 
@@ -232,7 +219,6 @@
             this.btnMesa14.Name = "btnMesa14";
             this.btnMesa14.Size = new System.Drawing.Size(169, 144);
             this.btnMesa14.TabIndex = 13;
-            this.btnMesa14.Text = "M 14";
             this.btnMesa14.UseVisualStyleBackColor = true;
             this.btnMesa14.Click += new System.EventHandler(this.btnMesa14_Click);
             // 
@@ -244,7 +230,6 @@
             this.btnMesa15.Name = "btnMesa15";
             this.btnMesa15.Size = new System.Drawing.Size(169, 144);
             this.btnMesa15.TabIndex = 14;
-            this.btnMesa15.Text = "M 15";
             this.btnMesa15.UseVisualStyleBackColor = true;
             this.btnMesa15.Click += new System.EventHandler(this.btnMesa15_Click);
             // 
@@ -511,17 +496,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // btnRevDisponible
-            // 
-            this.btnRevDisponible.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRevDisponible.Location = new System.Drawing.Point(1105, 581);
-            this.btnRevDisponible.Name = "btnRevDisponible";
-            this.btnRevDisponible.Size = new System.Drawing.Size(121, 50);
-            this.btnRevDisponible.TabIndex = 23;
-            this.btnRevDisponible.Text = "Disponibilidad";
-            this.btnRevDisponible.UseVisualStyleBackColor = true;
-            this.btnRevDisponible.Click += new System.EventHandler(this.btnRevDisponible_Click);
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,7 +503,6 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
-            this.Controls.Add(this.btnRevDisponible);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.hora);
             this.Controls.Add(this.fecha);
@@ -580,7 +553,6 @@
         private System.Windows.Forms.Label labelmesa4;
         private System.Windows.Forms.Label labelmesa3;
         private System.Windows.Forms.Label labelmesa2;
-        private System.Windows.Forms.Button btnRevDisponible;
         private System.Windows.Forms.Label labelmesa1;
     }
 }
