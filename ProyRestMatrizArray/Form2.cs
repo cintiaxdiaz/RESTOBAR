@@ -18,11 +18,12 @@ namespace ProyRestMatrizArray
    
                 // Matriz de mesas
 
-                mesas = new Mesa[3, 5] {
+                mesas = new Mesa[3, 5] 
+                {
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa()}, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }
-            };
+                };
             InitializeComponent();
         }
 
@@ -63,7 +64,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[0,2];
             Form formulario = new Form3(mesita, this);
 
-           
             formulario.Show();
         }
 
@@ -189,18 +189,20 @@ namespace ProyRestMatrizArray
                     
                     }
                 }
-
             } 
         }
 
         public void ActualizarDisponible() {
-            Label[,] labels = new Label[3, 5] {
+            Label[,] labels = new Label[3, 5] 
+            {
                 { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
                 { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
                 { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
             };
             for (int i = 0; i < 3; i++) {
+
                 for (int j = 0; j < 5; j++) {
+
                     if (mesas[i, j].ocupada) {
                         labels[i, j].ForeColor = Color.Red;
                 
