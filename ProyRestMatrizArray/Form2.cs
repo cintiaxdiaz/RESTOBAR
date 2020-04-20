@@ -15,10 +15,7 @@ namespace ProyRestMatrizArray
         Mesa[,] mesas;
 
         public Form2() {
-            //matriz de label
-            
-                
-
+   
                 // Matriz de mesas
 
                 mesas = new Mesa[3, 5] {
@@ -46,31 +43,27 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[0,1];
             Form formulario = new Form3(mesita, this);
 
-          //  mesas[0].ocupada
             formulario.Show();
         }
 
         private void Button1_Click(object sender, EventArgs e) {
 
-
-            if (MessageBox.Show("Seguro decea salir de Mesas?", "Salir", MessageBoxButtons.YesNo, 
+             
+            if (MessageBox.Show("Desea salir de las mesas?", "Salir", MessageBoxButtons.YesNo, 
                 MessageBoxIcon.Question) == DialogResult.Yes) {
-
 
                 Form1 formulario1 = new Form1();
                 formulario1.Show();
                 formulario1.Visible = true;
                 Visible = false;
             }
-
         }
-
         private void btnMesa3_Click(object sender, EventArgs e)
         {
             Mesa mesita = mesas[0,2];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
+           
             formulario.Show();
         }
 
@@ -95,7 +88,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[1,0];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -104,7 +96,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[1,1];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -113,7 +104,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[1,2];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -122,7 +112,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[1,3];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -131,7 +120,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[1,4];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -140,7 +128,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[2,0];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -149,7 +136,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[2,1];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -158,7 +144,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[2,2];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -167,7 +152,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[2,3];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -176,7 +160,6 @@ namespace ProyRestMatrizArray
             Mesa mesita = mesas[2,4];
             Form formulario = new Form3(mesita, this);
 
-            //  mesas[0].ocupada
             formulario.Show();
         }
 
@@ -200,20 +183,14 @@ namespace ProyRestMatrizArray
                    if (mesas[i, j].ocupada)
                     {
                         labels[i, j].BackColor = Color.Red;
-                        labels[i, j].Text = "OCUPADO";
-                    }
-                   
-
-                    else {
+                       
+                    }else {
                         labels[i, j].BackColor = Color.Orange;
-                        labels[i, j].Text = "DISPONIBLE";
+                    
                     }
                 }
 
-
             } 
-            
-
         }
 
         public void ActualizarDisponible() {
