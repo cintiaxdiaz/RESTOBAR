@@ -48,7 +48,7 @@ namespace ProyRestMatrizArray
 
         private void Button1_Click(object sender, EventArgs e) {
 
-             
+
             if (MessageBox.Show("Desea salir de las mesas?", "Salir", MessageBoxButtons.YesNo, 
                 MessageBoxIcon.Question) == DialogResult.Yes) {
 

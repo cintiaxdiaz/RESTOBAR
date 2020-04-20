@@ -26,6 +26,7 @@ namespace ProyRestMatrizArray
             mesa = table;
             form2 = form_2;
             InitializeComponent();
+
             for (int i = 0; i < comidas.Length; i++) {
                 if (mesa.pedidos[i] == 0) {
                     continue;
@@ -52,7 +53,8 @@ namespace ProyRestMatrizArray
 
         private void Button8_Click(object sender, EventArgs e) {
             Orden.Items.Clear();
-            NumericUpDown[] cantidadComidas = new NumericUpDown[15] {
+            NumericUpDown[] cantidadComidas = new NumericUpDown[15]
+            {
                 numericUpDown1, numericUpDown2, numericUpDown3,
                 numericUpDown4, numericUpDown5, numericUpDown6,
                 numericUpDown7, numericUpDown8, numericUpDown9,
@@ -75,13 +77,9 @@ namespace ProyRestMatrizArray
                 Orden.Items.Add(total1 + "  " + comidas[i]);
 
                 cantidadComidas[i].Value = 0;
-
-
             }
-
-            MessageBox.Show("Recepcionado en Cocina");
-            
-        }
+                MessageBox.Show("Recepcionado en Cocina");
+            }
 
         private void NumericUpDown1_ValueChanged(object sender, EventArgs e) {
 
@@ -89,16 +87,10 @@ namespace ProyRestMatrizArray
 
         private void Button7_Click(object sender, EventArgs e) {
             form2.ActualizarDisponible();
-            /*
-            if (MessageBox.Show("Desea salir del menú?", "Salir", MessageBoxButtons.YesNo,
-                MessageBoxIcon.Question) == DialogResult.Yes)*/ {
-
                 Visible = false;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e) {
-
         }
             
 
