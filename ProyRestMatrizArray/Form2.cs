@@ -11,12 +11,12 @@ using System.Windows.Forms;
 namespace ProyRestMatrizArray
 {
     public partial class Form2 : Form
-    {
+    {   //Declaración de la matriz
         Mesa[,] mesas;
 
         public Form2() {
    
-                // Matriz de mesas
+                // Inicialización de la matriz
 
                 mesas = new Mesa[3, 5] 
                 {
@@ -24,10 +24,14 @@ namespace ProyRestMatrizArray
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }
                 };
+
             InitializeComponent();
         }
 
         private void btnMesa1_Click(object sender, EventArgs e) {
+
+            //Se asignan la mesa al formulario tres
+
             Mesa mesita = mesas[0,0];
             Form formulario = new Form3(mesita, this);
 
@@ -35,12 +39,13 @@ namespace ProyRestMatrizArray
         }
 
         private void Horayfecha_Tick(object sender, EventArgs e) {
-
+            
             hora.Text = DateTime.Now.ToString("HH:mm:ss");
             fecha.Text = DateTime.Now.ToLongDateString();
         }
 
         private void BtnMesa2_Click(object sender, EventArgs e) {
+
             Mesa mesita = mesas[0,1];
             Form formulario = new Form3(mesita, this);
 
@@ -48,7 +53,6 @@ namespace ProyRestMatrizArray
         }
 
         private void Button1_Click(object sender, EventArgs e) {
-
 
             if (MessageBox.Show("Desea salir de las mesas?", "Salir", MessageBoxButtons.YesNo, 
                 MessageBoxIcon.Question) == DialogResult.Yes) {
@@ -167,32 +171,11 @@ namespace ProyRestMatrizArray
 
         }
 
-        private void btnRevDisponible_Click(object sender, EventArgs e)
-        {
-            Label[,] labels = new Label[3, 5] {
-                { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
-                { labelmesa6, labelmesa7, labelmesa8, labelmesa9, labelmesa10 },
-                { labelmesa11, labelmesa12, labelmesa13, labelmesa14, labelmesa15}
-            };
-            for (int i = 0; i < 3; i++)
-            {
-                
-                for (int j = 0; j < 5; j++)
-                    
-                {
-                   if (mesas[i, j].ocupada)
-                    {
-                        labels[i, j].BackColor = Color.Red;
-                       
-                    }else {
-                        labels[i, j].BackColor = Color.Orange;
-                    
-                    }
-                }
-            } 
-        }
 
-        public void ActualizarDisponible() {
+        public void ActualizarDisponible() 
+            {
+            //Actualiza el estado de las mesas (ocupado/disponible)
+
             Label[,] labels = new Label[3, 5] 
             {
                 { labelmesa1, labelmesa2, labelmesa3, labelmesa4, labelmesa5},
@@ -213,12 +196,6 @@ namespace ProyRestMatrizArray
                 }
             }
         }
-
-        private void Labelmesa1_Click(object sender, EventArgs e) {
-
-        }
-
-       
     }
 }
 

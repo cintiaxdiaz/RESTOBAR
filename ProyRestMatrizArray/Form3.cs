@@ -12,6 +12,8 @@ namespace ProyRestMatrizArray
 {
     public partial class Form3 : Form
     {
+        //Un arreglo de las comidas
+
         Mesa mesa;
         Form2 form2;
         string[] comidas = new string[15] 
@@ -26,9 +28,12 @@ namespace ProyRestMatrizArray
         }
 
         public Form3(Mesa table, Form2 form_2) {
+
             mesa = table;
             form2 = form_2;
             InitializeComponent();
+
+            //Agrega los pedidos a la mesa
 
             for (int i = 0; i < comidas.Length; i++) {
 
@@ -57,6 +62,9 @@ namespace ProyRestMatrizArray
 
         private void Button8_Click(object sender, EventArgs e) {
             Orden.Items.Clear();
+
+            //Sirve para insertar la cantidad de comidas en una orden
+
             NumericUpDown[] cantidadComidas = new NumericUpDown[15]
             {
                 numericUpDown1, numericUpDown2, numericUpDown3,
@@ -127,6 +135,8 @@ namespace ProyRestMatrizArray
                 numericUpDown10, numericUpDown11, numericUpDown12,
                 numericUpDown13,numericUpDown14, numericUpDown15
             };
+
+                // Elimina algún producto de la orden
 
             for (int i = 0; i < comidas.Length; i++) {
                 decimal total = mesa.pedidos[i] - cantidadComidas[i].Value;

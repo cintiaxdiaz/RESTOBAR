@@ -19,9 +19,11 @@ namespace ProyRestMatrizArray
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-           
+
             string rut = textBoxPassUsuario.Text;
-           
+
+            //Permite que se puedan ingresar rut inferiores a ocho dígitos.
+
             {
 
                 if (rut.Length == 9)
@@ -40,6 +42,8 @@ namespace ProyRestMatrizArray
                 { rut = "0000000" + rut; }
                 
             }
+
+            //Verificador del dígito del rut
 
             if (rut[8] != '-') {
 
@@ -108,6 +112,8 @@ namespace ProyRestMatrizArray
         }
 
         private void Horayfecha_Tick(object sender, EventArgs e) {
+
+            // Indica la hora y la fecha en tiempo real
 
             hora.Text = DateTime.Now.ToString("HH:mm:ss");
             fecha.Text = DateTime.Now.ToLongDateString();

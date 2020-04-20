@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 namespace ProyRestMatrizArray
 {
     public class Mesa
-    {
+    {   // Guarda el pedido de cada mesa
+
         public int[] pedidos;
         public bool ocupada;
         public Mesa() {
