@@ -494,6 +494,7 @@
             // 
             this.Orden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(219)))), ((int)(((byte)(252)))));
             this.Orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Orden.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(123)))), ((int)(((byte)(208)))));
             this.Orden.FormattingEnabled = true;
             this.Orden.ItemHeight = 20;
             this.Orden.Location = new System.Drawing.Point(925, 124);
