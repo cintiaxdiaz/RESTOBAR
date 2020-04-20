@@ -225,11 +225,11 @@ namespace ProyRestMatrizArray
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 5; j++) {
                     if (mesas[i, j].ocupada) {
-                        labels[i, j].BackColor = Color.Red;
-                        labels[i, j].Text = "OCUPADO";
+                        labels[i, j].ForeColor = Color.Red;
+                
                     } else {
-                        labels[i, j].BackColor = Color.Orange;
-                        labels[i, j].Text = "DISPONIBLE";
+                        labels[i, j].ForeColor = ColorTranslator.FromHtml("#C0ffC0");
+
                     }
                 }
             }
