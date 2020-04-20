@@ -96,7 +96,7 @@ namespace ProyRestMatrizArray
 
         private void Button1_Click_1(object sender, EventArgs e) {
 
-            if (MessageBox.Show("Seguro desea Cerrar sesión?", "Cerrar", MessageBoxButtons.YesNo,
+            if (MessageBox.Show("Esta Seguro?", "CERRAR SESION", MessageBoxButtons.YesNo,
                MessageBoxIcon.Question) == DialogResult.Yes) {
 
                 Form1 formulario1 = new Form1();
@@ -109,7 +109,7 @@ namespace ProyRestMatrizArray
         private void Button2_Click(object sender, EventArgs e) {
 
 
-            if (MessageBox.Show("Seguro desea Eliminar", "ELIMINAR", MessageBoxButtons.YesNo,
+            if (MessageBox.Show("Estas Seguro?", "ELIMINAR", MessageBoxButtons.YesNo,
               MessageBoxIcon.Question) == DialogResult.No) {
                 return;
             }
@@ -136,6 +136,11 @@ namespace ProyRestMatrizArray
                 Orden.Items.Add(total + "  " + comidas[i]);
                 cantidadComidas[i].Value = 0;
             }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
         }
     }
   }
