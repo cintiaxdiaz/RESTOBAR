@@ -25,17 +25,28 @@ namespace ProyRestMatrizArray
             {
 
                 if (rut.Length == 9)
-                {
-                    rut = "0" + rut;
-                }
-           /* if (rut.Length == 9) {
-                rut = "0" + rut;
-            }
+                {rut = "0" + rut;}
+                if (rut.Length == 8)
+                { rut = "00" + rut; }
+                if (rut.Length == 7)
+                { rut = "000" + rut; }
+                if (rut.Length == 6)
+                { rut = "0000" + rut; }
+                if (rut.Length == 5)
+                { rut = "00000" + rut; }
+                if (rut.Length == 4)
+                { rut = "000000" + rut; }
+                if (rut.Length == 3)
+                { rut = "0000000" + rut; }
+                /* if (rut.Length == 9) {
+                     rut = "0" + rut;
+                 }
 
-            if (rut.Length == 8)
-            {
-                rut = "00" + rut;
-          */  }
+                 if (rut.Length == 8)
+                 {
+                     rut = "00" + rut;
+               */
+            }
 
             if (rut[8] != '-') {
 
