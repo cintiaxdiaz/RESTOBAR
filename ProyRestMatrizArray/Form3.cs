@@ -44,21 +44,7 @@ namespace ProyRestMatrizArray
             }
         }
 
-        private void Label1_Click(object sender, EventArgs e) {
-
-        }
-
-        private void Orden_SelectedIndexChanged(object sender, EventArgs e) {
-
-        }
-
-        private void Label8_Click(object sender, EventArgs e) {
-
-        }
-
-        private void Label9_Click(object sender, EventArgs e) {
-
-        }
+        
 
         private void Button8_Click(object sender, EventArgs e) {
             Orden.Items.Clear();
@@ -93,18 +79,13 @@ namespace ProyRestMatrizArray
                 MessageBox.Show("Recepcionado en Cocina");
             }
 
-        private void NumericUpDown1_ValueChanged(object sender, EventArgs e) {
-
-        }
+      
 
         private void Button7_Click(object sender, EventArgs e) {
             form2.ActualizarDisponible();
                 Visible = false;
         }
-
-        private void button1_Click(object sender, EventArgs e) {
-        }
-            
+   
 
         private void Button1_Click_1(object sender, EventArgs e) {
 
@@ -119,7 +100,7 @@ namespace ProyRestMatrizArray
         }
 
         private void Button2_Click(object sender, EventArgs e) {
-
+            Orden.Items.Clear();
 
             if (MessageBox.Show("Estas Seguro?", "ELIMINAR", MessageBoxButtons.YesNo,
               MessageBoxIcon.Question) == DialogResult.No) {
@@ -152,13 +133,10 @@ namespace ProyRestMatrizArray
                 }
                 Orden.Items.Add(total + "  " + comidas[i]);
                 cantidadComidas[i].Value = 0;
+                Orden.Items.Clear();
             }
         }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
   }
 

@@ -166,12 +166,7 @@ namespace ProyRestMatrizArray
 
             formulario.Show();
         }
-
-        private void GroupBox1_Enter(object sender, EventArgs e) {
-
-        }
-
-
+        
         public void ActualizarDisponible() 
             {
             //Actualiza el estado de las mesas (ocupado/disponible)

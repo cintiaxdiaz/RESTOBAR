@@ -65,10 +65,10 @@
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.Orden = new System.Windows.Forms.ListBox();
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnAgregarProd = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEliminaProd = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
@@ -308,7 +308,6 @@
             this.label9.Size = new System.Drawing.Size(51, 20);
             this.label9.TabIndex = 37;
             this.label9.Text = "Agua";
-            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // groupBox3
             // 
@@ -344,7 +343,6 @@
             this.label8.Size = new System.Drawing.Size(105, 20);
             this.label8.TabIndex = 36;
             this.label8.Text = "Papas fritas";
-            this.label8.Click += new System.EventHandler(this.Label8_Click);
             // 
             // label6
             // 
@@ -443,7 +441,6 @@
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(44, 24);
             this.numericUpDown1.TabIndex = 15;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
             // 
             // label7
             // 
@@ -501,7 +498,6 @@
             this.Orden.Name = "Orden";
             this.Orden.Size = new System.Drawing.Size(261, 404);
             this.Orden.TabIndex = 1;
-            this.Orden.SelectedIndexChanged += new System.EventHandler(this.Orden_SelectedIndexChanged);
             // 
             // btnCerrar
             // 
@@ -514,16 +510,16 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.Button7_Click);
             // 
-            // btnAgregar
+            // btnAgregarProd
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(604, 551);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(122, 32);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.Button8_Click);
+            this.btnAgregarProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProd.Location = new System.Drawing.Point(604, 551);
+            this.btnAgregarProd.Name = "btnAgregarProd";
+            this.btnAgregarProd.Size = new System.Drawing.Size(122, 32);
+            this.btnAgregarProd.TabIndex = 4;
+            this.btnAgregarProd.Text = "Agregar";
+            this.btnAgregarProd.UseVisualStyleBackColor = true;
+            this.btnAgregarProd.Click += new System.EventHandler(this.Button8_Click);
             // 
             // button1
             // 
@@ -548,16 +544,16 @@
             this.label18.TabIndex = 7;
             this.label18.Text = "ORDEN";
             // 
-            // button2
+            // btnEliminaProd
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(746, 551);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 32);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnEliminaProd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminaProd.Location = new System.Drawing.Point(746, 551);
+            this.btnEliminaProd.Name = "btnEliminaProd";
+            this.btnEliminaProd.Size = new System.Drawing.Size(126, 32);
+            this.btnEliminaProd.TabIndex = 8;
+            this.btnEliminaProd.Text = "Eliminar";
+            this.btnEliminaProd.UseVisualStyleBackColor = true;
+            this.btnEliminaProd.Click += new System.EventHandler(this.Button2_Click);
             // 
             // Form3
             // 
@@ -566,10 +562,10 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1262, 660);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnEliminaProd);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnAgregar);
+            this.Controls.Add(this.btnAgregarProd);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.Orden);
             this.Controls.Add(this.groupBox1);
@@ -618,7 +614,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ListBox Orden;
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnAgregarProd;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
@@ -650,6 +646,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnEliminaProd;
     }
 }

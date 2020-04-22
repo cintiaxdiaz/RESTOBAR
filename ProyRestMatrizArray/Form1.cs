@@ -106,10 +106,7 @@ namespace ProyRestMatrizArray
                 MessageBox.Show("Usuario o contraseña incorrecta"); 
             }
         }
-
-        private void Timer1_Tick(object sender, EventArgs e) {
-
-        }
+        
 
         private void Horayfecha_Tick(object sender, EventArgs e) {
 
@@ -120,26 +117,6 @@ namespace ProyRestMatrizArray
 
         }
 
-        private void Label1_Click(object sender, EventArgs e) {
-
-        }
-
-        private void TextBoxPassUsuario_TextChanged(object sender, EventArgs e) {
-
-        }
-
-        private void TextBoxUsuario_TextChanged(object sender, EventArgs e) {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
