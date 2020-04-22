@@ -53,7 +53,6 @@
             this.textBoxUsuario.TabIndex = 0;
             this.textBoxUsuario.Text = "Usuario";
             this.textBoxUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxUsuario.TextChanged += new System.EventHandler(this.TextBoxUsuario_TextChanged);
             // 
             // textBoxPassUsuario
             // 
@@ -65,7 +64,6 @@
             this.textBoxPassUsuario.TabIndex = 1;
             this.textBoxPassUsuario.Text = "Contraseña";
             this.textBoxPassUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBoxPassUsuario.TextChanged += new System.EventHandler(this.TextBoxPassUsuario_TextChanged);
             // 
             // buttonIngresar
             // 
@@ -118,7 +116,6 @@
             this.label1.Size = new System.Drawing.Size(392, 26);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rut sin puntos con guión y dígito verificador.";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
@@ -143,7 +140,6 @@
             this.label3.Size = new System.Drawing.Size(491, 88);
             this.label3.TabIndex = 8;
             this.label3.Text = "BIENVENIDOS";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Form1
             // 
@@ -163,7 +159,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

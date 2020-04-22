@@ -274,7 +274,6 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MESAS";
-            this.groupBox1.Enter += new System.EventHandler(this.GroupBox1_Enter);
             // 
             // labelmesa1
             // 
