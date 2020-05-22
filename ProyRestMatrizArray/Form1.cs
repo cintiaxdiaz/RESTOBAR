@@ -117,6 +117,16 @@ namespace ProyRestMatrizArray
 
         }
 
-        
+        private void TextBoxUsuario_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void Label6_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Hora_Click(object sender, EventArgs e) {
+
+        }
     }
 }
