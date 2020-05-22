@@ -12,6 +12,7 @@ namespace ProyRestMatrizArray
 {
     public partial class Form1 : Form
     {
+        int RUT_NUM_CHARS = 10
         public Form1()
         {
             InitializeComponent();
@@ -19,90 +20,12 @@ namespace ProyRestMatrizArray
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
-
-            string rut = textBoxPassUsuario.Text;
-
-            //Permite que se puedan ingresar rut inferiores a ocho dígitos.
-
-            {
-
-                if (rut.Length == 9)
-                {rut = "0" + rut;}
-                if (rut.Length == 8)
-                { rut = "00" + rut; }
-                if (rut.Length == 7)
-                { rut = "000" + rut; }
-                if (rut.Length == 6)
-                { rut = "0000" + rut; }
-                if (rut.Length == 5)
-                { rut = "00000" + rut; }
-                if (rut.Length == 4)
-                { rut = "000000" + rut; }
-                if (rut.Length == 3)
-                { rut = "0000000" + rut; }
-                
-            }
-
-            //Verificador del dígito del rut
-
-            if (rut[8] != '-') {
-
-                return;
-            }
-
-            int n0, n1, n2, n3, n4, n5, n6, n7 = 0;
-
-            int CONSTANTE0 = 3;
-            int CONSTANTE1 = 2;
-            int CONSTANTE2 = 7;
-            int CONSTANTE3 = 6;
-            int CONSTANTE4 = 5;
-            int CONSTANTE5 = 4;
-            int CONSTANTE6 = 3;
-            int CONSTANTE7 = 2;
-
-            n0 = CONSTANTE0 * Int32.Parse(rut[0].ToString());
-            n1 = CONSTANTE1 * Int32.Parse(rut[1].ToString());
-            n2 = CONSTANTE2 * Int32.Parse(rut[2].ToString());
-            n3 = CONSTANTE3 * Int32.Parse(rut[3].ToString());
-            n4 = CONSTANTE4 * Int32.Parse(rut[4].ToString());
-            n5 = CONSTANTE5 * Int32.Parse(rut[5].ToString());
-            n6 = CONSTANTE6 * Int32.Parse(rut[6].ToString());
-            n7 = CONSTANTE7 * Int32.Parse(rut[7].ToString());
-
-            double suma = n0 + n1 + n2 + n3 + n4 + n5 + n6 + n7;
-            double divisiondecimal = suma / 11;
-            Console.WriteLine(divisiondecimal);
-            double divisionentero = (int)divisiondecimal;
-            Console.WriteLine(divisionentero);
-            double valordecimal = divisiondecimal - divisionentero;
-            double resta11 = 11 - (11 * (valordecimal));
-            resta11 = Math.Round(resta11);
-            int digito = (int)resta11;
-
-
-            if (digito == 11) {
-                digito = 0;
-            }
-
-            int digitoVer;
-
-            if ((rut[9] == 'k') | (rut[9] == 'K')) {
-                digitoVer = 10;
-            } else {
-                digitoVer = Int32.Parse(rut[9].ToString());
-            }
-
-            if (digito == digitoVer) {
-
+            if (rutValido(textBoxPassUsuario.Text)) {
                 Form formulario = new Form2();
                 formulario.Show();
                 Visible = false;
-
                 MessageBox.Show("BIENVENIDO, QUE TENGAS UN EXCELENTE DÍA!");
-
             } else {
-                
                 MessageBox.Show("Usuario o contraseña incorrecta"); 
             }
         }
@@ -116,7 +39,46 @@ namespace ProyRestMatrizArray
             fecha.Text = DateTime.Now.ToLongDateString();
 
         }
-
         
+        private bool rutValido(rut string) {
+            rut = rut.Replace('.', string.Empty);
+            if ((rut.Length < 3) rut[rut.Length - 2] != '-') {
+                MessageBox.Show("Formato inválido para Rut.");
+                return;
+            }
+            
+            int cerosFaltantes = RUT_NUM_CHARS - rut.Length;
+            rut = (new String('0', cerosFaltantes)) + rut;
+            int[] nums = {0, 0, 0, 0, 0, 0, 0, 0}
+            int[] CONSTANTES = {3, 2, 7, 6, 5, 4, 3, 2}
+            
+            for (int i = 0; i < 5; i++) 
+            {
+                nums[i] = CONSTANTES[i] * Int32.Parse(rut[i].ToString());
+            }
+
+            double suma = n0 + n1 + n2 + n3 + n4 + n5 + n6 + n7;
+            double divisiondecimal = suma / 11;
+            double divisionentero = (int)divisiondecimal;
+            double valordecimal = divisiondecimal - divisionentero;
+            double resta11 = 11 - (11 * (valordecimal));
+            resta11 = Math.Round(resta11);
+            int digito = (int)resta11;
+
+            if (digito == 11) {
+                digito = 0;
+            }
+
+            int digitoVer;
+
+            if ((rut[9] == 'k') | (rut[9] == 'K')) {
+                digitoVer = 10;
+            } else {
+                digitoVer = Int32.Parse(rut[9].ToString());
+            }
+
+            return digito == digitoVer;
+     
+        }
     }
 }
