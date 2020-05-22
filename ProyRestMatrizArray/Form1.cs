@@ -12,7 +12,6 @@ namespace ProyRestMatrizArray
 {
     public partial class Form1 : Form
     {
-        int RUT_NUM_CHARS = 10;
         public Form1()
         {
             InitializeComponent();
@@ -41,6 +40,7 @@ namespace ProyRestMatrizArray
         }
         
         private bool rutValido(string rut) {
+            int RUT_NUM_CHARS = 10;
             rut = rut.Replace(".", "");
             if ((rut.Length < 3) | rut[rut.Length - 2] != '-') {
                 return false;
