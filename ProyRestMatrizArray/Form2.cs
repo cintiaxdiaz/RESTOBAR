@@ -257,12 +257,13 @@ namespace ProyRestMatrizArray
                 if (busca[0].Equals(textBox1.Text)) {
                     label1.Text = label1.Text + buscar + "\n";
                 }
+
                 buscar = leer.ReadLine();
             }
             leer.Close();
         }
 
-        private void Button2_Click(object sender, EventArgs e) {
+        private void Button2_Click(object sender, EventArgs e) { 
             if (!File.Exists(@"C:\TXTS\VIGIACINTIADIAZ.txt")) {
                 MessageBox.Show("No existe");
             }
