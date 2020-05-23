@@ -13,12 +13,19 @@ namespace ProyRestMatrizArray
     public partial class Form2 : Form
     {   //Declaración de la matriz
         Mesa[,] mesas;
+        USUARIO usuario;
+        List<CLASEEVALUA2CintiaDiaz> listaEvento;
 
-        public Form2() {
-   
-                // Inicialización de la matriz
 
-                mesas = new Mesa[3, 5] 
+
+        public Form2(USUARIO usuaform2) {
+            listaEvento = new List<CLASEEVALUA2CintiaDiaz>();
+            
+            usuario = usuaform2;
+
+            // Inicialización de la matriz
+
+            mesas = new Mesa[3, 5] 
                 {
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa()}, 
                 { new Mesa(), new Mesa(), new Mesa(), new Mesa(), new Mesa() }, 
@@ -28,10 +35,16 @@ namespace ProyRestMatrizArray
             InitializeComponent();
         }
 
+        private void AgregarEvento(string coordenadas) {
+            string descripEvento = "seleccionar mesa " + coordenadas;
+            CLASEEVALUA2CintiaDiaz evento = new CLASEEVALUA2CintiaDiaz(usuario, descripEvento);
+            listaEvento.Add(evento);
+        }
+
         private void btnMesa1_Click(object sender, EventArgs e) {
 
             //Se asignan la mesa al formulario tres
-
+            AgregarEvento("[0,0]");
             Mesa mesita = mesas[0,0];
             Form formulario = new Form3(mesita, this);
 
@@ -45,6 +58,7 @@ namespace ProyRestMatrizArray
         }
 
         private void BtnMesa2_Click(object sender, EventArgs e) {
+            AgregarEvento("[0,1]");
 
             Mesa mesita = mesas[0,1];
             Form formulario = new Form3(mesita, this);
@@ -65,6 +79,7 @@ namespace ProyRestMatrizArray
         }
         private void btnMesa3_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[0,2]");
             Mesa mesita = mesas[0,2];
             Form formulario = new Form3(mesita, this);
 
@@ -73,6 +88,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa4_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[0,3]");
             Mesa mesita = mesas[0,3];
             Form formulario = new Form3(mesita, this);
 
@@ -81,6 +97,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa5_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[0,4]");
             Mesa mesita = mesas[0,4];
             Form formulario = new Form3(mesita, this);
 
@@ -89,6 +106,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa6_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[1,0]");
             Mesa mesita = mesas[1,0];
             Form formulario = new Form3(mesita, this);
 
@@ -97,6 +115,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa7_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[1,1]");
+
             Mesa mesita = mesas[1,1];
             Form formulario = new Form3(mesita, this);
 
@@ -105,6 +125,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa8_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[1,2]");
             Mesa mesita = mesas[1,2];
             Form formulario = new Form3(mesita, this);
 
@@ -113,6 +134,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa9_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[1,3]");
             Mesa mesita = mesas[1,3];
             Form formulario = new Form3(mesita, this);
 
@@ -121,6 +143,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa10_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[1,4]");
+
             Mesa mesita = mesas[1,4];
             Form formulario = new Form3(mesita, this);
 
@@ -129,6 +153,7 @@ namespace ProyRestMatrizArray
 
         private void btnMesa11_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[2,0]");
             Mesa mesita = mesas[2,0];
             Form formulario = new Form3(mesita, this);
 
@@ -137,6 +162,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa12_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[2,1]");
+
             Mesa mesita = mesas[2,1];
             Form formulario = new Form3(mesita, this);
 
@@ -145,6 +172,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa13_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[2,2]");
+
             Mesa mesita = mesas[2,2];
             Form formulario = new Form3(mesita, this);
 
@@ -153,6 +182,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa14_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[2,3]");
+
             Mesa mesita = mesas[2,3];
             Form formulario = new Form3(mesita, this);
 
@@ -161,6 +192,8 @@ namespace ProyRestMatrizArray
 
         private void btnMesa15_Click(object sender, EventArgs e)
         {
+            AgregarEvento("[2,4]");
+
             Mesa mesita = mesas[2,4];
             Form formulario = new Form3(mesita, this);
 
@@ -190,6 +223,10 @@ namespace ProyRestMatrizArray
                     }
                 }
             }
+        }
+
+        private void Form2_Load(object sender, EventArgs e) {
+
         }
     }
 }

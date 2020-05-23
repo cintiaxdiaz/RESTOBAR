@@ -20,8 +20,10 @@ namespace ProyRestMatrizArray
 
         private void buttonIngresar_Click(object sender, EventArgs e)
         {
+
             if (rutValido(textBoxPassUsuario.Text)) {
-                Form formulario = new Form2();
+                USUARIO usua = new  USUARIO(textBoxPassUsuario.Text);
+                Form formulario = new Form2(usua);
                 formulario.Show();
                 Visible = false;
                 MessageBox.Show("BIENVENIDO, QUE TENGAS UN EXCELENTE DÍA!");
@@ -89,6 +91,10 @@ namespace ProyRestMatrizArray
         }
 
         private void Hora_Click(object sender, EventArgs e) {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e) {
 
         }
     }
