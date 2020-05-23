@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ProyRestMatrizArray
 {
@@ -14,12 +15,12 @@ namespace ProyRestMatrizArray
     {   //Declaración de la matriz
         Mesa[,] mesas;
         USUARIO usuario;
-        List<CLASEEVALUA2CintiaDiaz> listaEvento;
+        List<CLASEEVALUA2CintiaDiaz> LISTAEVALUA2;
 
 
 
         public Form2(USUARIO usuaform2) {
-            listaEvento = new List<CLASEEVALUA2CintiaDiaz>();
+            LISTAEVALUA2 = new List<CLASEEVALUA2CintiaDiaz>();
             
             usuario = usuaform2;
 
@@ -38,7 +39,7 @@ namespace ProyRestMatrizArray
         private void AgregarEvento(string coordenadas) {
             string descripEvento = "seleccionar mesa " + coordenadas;
             CLASEEVALUA2CintiaDiaz evento = new CLASEEVALUA2CintiaDiaz(usuario, descripEvento);
-            listaEvento.Add(evento);
+            LISTAEVALUA2.Add(evento);
         }
 
         private void btnMesa1_Click(object sender, EventArgs e) {
@@ -46,7 +47,7 @@ namespace ProyRestMatrizArray
             //Se asignan la mesa al formulario tres
             AgregarEvento("[0,0]");
             Mesa mesita = mesas[0,0];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[0,0]");
 
             formulario.Show();
         }
@@ -61,7 +62,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[0,1]");
 
             Mesa mesita = mesas[0,1];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[0,1]");
 
             formulario.Show();
         }
@@ -70,7 +71,17 @@ namespace ProyRestMatrizArray
 
             if (MessageBox.Show("Desea salir de las mesas?", "Salir", MessageBoxButtons.YesNo, 
                 MessageBoxIcon.Question) == DialogResult.Yes) {
+                usuario.CERRARSESION();
 
+                StreamWriter archivolista = new StreamWriter(@"C:\TXTS\VIGIACINTIADIAZ.txt", true);
+
+                foreach (CLASEEVALUA2CintiaDiaz Evento in LISTAEVALUA2) {
+                    Evento.fin = usuario.finSesion;
+
+                    archivolista.WriteLine(Evento.Rut + "," + Evento.Iniciosesion + "," + Evento.fin +
+                                            "," + Evento.accion + "," + Evento.accionf);
+                }
+                archivolista.Close();
                 Form1 formulario1 = new Form1();
                 formulario1.Show();
                 formulario1.Visible = true;
@@ -81,7 +92,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[0,2]");
             Mesa mesita = mesas[0,2];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[0,2]");
 
             formulario.Show();
         }
@@ -90,7 +101,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[0,3]");
             Mesa mesita = mesas[0,3];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[0,3]");
 
             formulario.Show();
         }
@@ -99,7 +110,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[0,4]");
             Mesa mesita = mesas[0,4];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[0,4]");
 
             formulario.Show();
         }
@@ -108,7 +119,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[1,0]");
             Mesa mesita = mesas[1,0];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[1,0]");
 
             formulario.Show();
         }
@@ -118,7 +129,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[1,1]");
 
             Mesa mesita = mesas[1,1];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[1,1]");
 
             formulario.Show();
         }
@@ -127,7 +138,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[1,2]");
             Mesa mesita = mesas[1,2];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[1,2]");
 
             formulario.Show();
         }
@@ -136,7 +147,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[1,3]");
             Mesa mesita = mesas[1,3];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[1,3]");
 
             formulario.Show();
         }
@@ -146,7 +157,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[1,4]");
 
             Mesa mesita = mesas[1,4];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[1,4]");
 
             formulario.Show();
         }
@@ -155,7 +166,7 @@ namespace ProyRestMatrizArray
         {
             AgregarEvento("[2,0]");
             Mesa mesita = mesas[2,0];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[2,0]");
 
             formulario.Show();
         }
@@ -165,7 +176,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[2,1]");
 
             Mesa mesita = mesas[2,1];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[2,1]");
 
             formulario.Show();
         }
@@ -175,8 +186,8 @@ namespace ProyRestMatrizArray
             AgregarEvento("[2,2]");
 
             Mesa mesita = mesas[2,2];
-            Form formulario = new Form3(mesita, this);
-
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[2,2]");
+            
             formulario.Show();
         }
 
@@ -185,7 +196,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[2,3]");
 
             Mesa mesita = mesas[2,3];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[2,3]");
 
             formulario.Show();
         }
@@ -195,7 +206,7 @@ namespace ProyRestMatrizArray
             AgregarEvento("[2,4]");
 
             Mesa mesita = mesas[2,4];
-            Form formulario = new Form3(mesita, this);
+            Form formulario = new Form3(mesita, this, usuario, LISTAEVALUA2, "[2,4]");
 
             formulario.Show();
         }
@@ -227,6 +238,42 @@ namespace ProyRestMatrizArray
 
         private void Form2_Load(object sender, EventArgs e) {
 
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e) {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e) {
+            if (!File.Exists(@"C:\TXTS\VIGIACINTIADIAZ.txt")) {
+                MessageBox.Show("No existe");
+            }
+            StreamReader leer = new StreamReader(@"C:\TXTS\VIGIACINTIADIAZ.txt");
+            label1.Text = "";
+            string buscar = leer.ReadLine();
+            while (buscar != null) {
+                string[] busca = buscar.Split(',');
+
+                if (busca[0].Equals(textBox1.Text)) {
+                    label1.Text = label1.Text + buscar + "\n";
+                }
+                buscar = leer.ReadLine();
+            }
+            leer.Close();
+        }
+
+        private void Button2_Click(object sender, EventArgs e) {
+            if (!File.Exists(@"C:\TXTS\VIGIACINTIADIAZ.txt")) {
+                MessageBox.Show("No existe");
+            }
+            StreamReader leer = new StreamReader(@"C:\TXTS\VIGIACINTIADIAZ.txt");
+            label1.Text = "";
+            string mostrar = leer.ReadLine();
+            while (mostrar != null) {
+                label1.Text = label1.Text + mostrar + "\n";
+                mostrar = leer.ReadLine();
+            }
+            leer.Close();
         }
     }
 }

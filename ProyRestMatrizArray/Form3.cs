@@ -16,6 +16,10 @@ namespace ProyRestMatrizArray
 
         Mesa mesa;
         Form2 form2;
+        USUARIO usuaform3;
+        List <CLASEEVALUA2CintiaDiaz> LISTAEVALUA2;
+        string coordenadas;
+        
         string[] comidas = new string[15] 
         {
             "Espagueti a la boloñesa", "Espagueti a la cherry", "Espagueti con salsa blanca",
@@ -26,8 +30,17 @@ namespace ProyRestMatrizArray
         public Form3() {
             InitializeComponent();
         }
+        private void AgregarEvento(string descripEvento) {
+            CLASEEVALUA2CintiaDiaz evento = new CLASEEVALUA2CintiaDiaz(usuaform3, descripEvento);
+            LISTAEVALUA2.Add(evento);
+        }
+        public Form3(Mesa table, Form2 form_2, USUARIO USUA3, List<CLASEEVALUA2CintiaDiaz> listformtres, string coordenadas1) {
 
-        public Form3(Mesa table, Form2 form_2) {
+            LISTAEVALUA2 = listformtres;
+            usuaform3 = USUA3;
+            coordenadas = coordenadas1;
+
+        
 
             mesa = table;
             form2 = form_2;
@@ -59,7 +72,7 @@ namespace ProyRestMatrizArray
                 numericUpDown10, numericUpDown11, numericUpDown12,
                 numericUpDown13,numericUpDown14, numericUpDown15
             };
-
+            string eventostring = "Se agregó ";
             for (int i = 0; i < comidas.Length; i++) {
 
                 decimal total1 = mesa.pedidos[i] + (int)cantidadComidas[i].Value;
@@ -73,35 +86,31 @@ namespace ProyRestMatrizArray
                 mesa.Ocupar();
 
                 Orden.Items.Add(total1 + "  " + comidas[i]);
+                eventostring = eventostring + cantidadComidas[i].Value + "  " + comidas[i] + " ";
 
                 cantidadComidas[i].Value = 0;
             }
-                MessageBox.Show("Recepcionado en Cocina");
-            }
+            eventostring = eventostring + "En la mesa " + coordenadas;
+            AgregarEvento(eventostring);
+            MessageBox.Show("Recepcionado en Cocina");
+        }
 
       
 
         private void Button7_Click(object sender, EventArgs e) {
             form2.ActualizarDisponible();
-                Visible = false;
+            string eventostring = "Se actualizó la mesa " + coordenadas;
+            AgregarEvento(eventostring);   
+            Visible = false;
         }
    
 
         private void Button1_Click_1(object sender, EventArgs e) {
 
-            if (MessageBox.Show("Esta Seguro?", "CERRAR SESION", MessageBoxButtons.YesNo,
-               MessageBoxIcon.Question) == DialogResult.Yes) {
-
-                Form1 formulario1 = new Form1();
-                formulario1.Show();
-                formulario1.Visible = true;
-                Visible = false;
-            }
         }
 
         private void Button2_Click(object sender, EventArgs e) {
-            Orden.Items.Clear();
-
+            string eventostring = "Se eliminó ";
             if (MessageBox.Show("Estas Seguro?", "ELIMINAR", MessageBoxButtons.YesNo,
               MessageBoxIcon.Question) == DialogResult.No) {
                 return;
@@ -118,7 +127,7 @@ namespace ProyRestMatrizArray
             };
 
                 // Elimina algún producto de la orden
-
+                   
             for (int i = 0; i < comidas.Length; i++) {
                 decimal total = mesa.pedidos[i] - cantidadComidas[i].Value;
 
@@ -127,16 +136,22 @@ namespace ProyRestMatrizArray
                     return;
                 }
                 mesa.pedidos[i] = (int)total;
+                eventostring = eventostring + cantidadComidas[i].Value + "  " + comidas[i] + " ";
 
                 if (total == 0) {
                     continue;
                 }
                 Orden.Items.Add(total + "  " + comidas[i]);
                 cantidadComidas[i].Value = 0;
-                Orden.Items.Clear();
             }
+            eventostring = eventostring + "En la mesa " + coordenadas;
+            AgregarEvento(eventostring);
+
         }
-        
+
+        private void Form3_Load(object sender, EventArgs e) {
+
+        }
     }
   }
 

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyRestMatrizArray
 {
-    public class USUARIO
-    {
+    public class USUARIO {
         public string rut;
         public DateTime inicioSesion;
         public DateTime finSesion;
@@ -16,6 +15,12 @@ namespace ProyRestMatrizArray
         public USUARIO(string Rut) {
             rut = Rut;
             inicioSesion = DateTime.Now;
-        } 
+        }
+        public void CERRARSESION(){
+
+            finSesion = DateTime.Now;
+
+
+            }
     }
 }

@@ -66,7 +66,6 @@
             this.Orden = new System.Windows.Forms.ListBox();
             this.btnCerrar = new System.Windows.Forms.Button();
             this.btnAgregarProd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.btnEliminaProd = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -502,11 +501,11 @@
             // btnCerrar
             // 
             this.btnCerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar.Location = new System.Drawing.Point(1078, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(1166, 23);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(75, 46);
             this.btnCerrar.TabIndex = 3;
-            this.btnCerrar.Text = "Atras";
+            this.btnCerrar.Text = "Listo";
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.Button7_Click);
             // 
@@ -520,17 +519,6 @@
             this.btnAgregarProd.Text = "Agregar";
             this.btnAgregarProd.UseVisualStyleBackColor = true;
             this.btnAgregarProd.Click += new System.EventHandler(this.Button8_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1159, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 46);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Cerrar sesión";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // label18
             // 
@@ -564,7 +552,6 @@
             this.ClientSize = new System.Drawing.Size(1262, 660);
             this.Controls.Add(this.btnEliminaProd);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAgregarProd);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.Orden);
@@ -572,6 +559,7 @@
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -643,7 +631,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button btnEliminaProd;
     }
